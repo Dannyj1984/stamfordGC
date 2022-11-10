@@ -18,25 +18,14 @@ interface Props {
   window?: () => Window;
 }
 
-const drawerWidth = 240;
+const drawerWidth = `${window.innerWidth / 2}px`;
 const navItems = [
     {title: 'Golf', path: '/golf'},
     {title: 'Functions', path: '/functions'},
     {title: 'Weddings', path: '/weddings'},
-    {title: 'Contact', path: '/contact'},
-    {title: 'About', path: '/about'}
+    {title: 'Course', path: '/course'},
+    {title: 'Contact', path: '/contact'}
 ];
-
-const navStyles = {
-    textDecoration: 'none',
-    typography: 'h6',
-    '&:hover': {
-        color : 'red.500'
-    },
-    '&.active': {
-        color: 'text.secondary'
-    }
-}
 
 
 export default function Header(props: Props) {
@@ -48,16 +37,26 @@ export default function Header(props: Props) {
   };
 
   const drawer = (
-    <Box onClick={handleDrawerToggle} sx={{ textAlign: 'right' }}>
-        <img src='/img/stamford.png' alt='logo' height={80} width={80}/>
+    <Box onClick={handleDrawerToggle} sx={{display: 'flex', flexDirection:'column'}}>
+        <img src='/img/stamford.png' alt='logo' height={80} width={80} style={{alignSelf:'center'}}/>
       <Divider />
-      <List>
+      <List sx={{alignSelf:'center'}}>
         {navItems.map(({title, path}) => (
           <ListItem 
           component={NavLink}
           to={path}
           key={path}
-          sx={ {color: 'text.secondary', navStyles}}
+          sx={ {
+            color: 'text.secondary',
+            textDecoration: 'none',
+            typography: 'h4',
+                '&:hover': {
+                    color : 'grey.500'
+                },
+                '&.active': {
+                    color: 'text.secondary'
+                }
+        }}
           >{title}</ListItem>
         ))}
       </List>
@@ -67,7 +66,7 @@ export default function Header(props: Props) {
   const container = window !== undefined ? () => window().document.body : undefined;
 
   return (
-    <Box sx={{ display: 'flex' }}>
+    <Box sx={{ display: 'flex', height: '15vh' }}>
       <AppBar component="nav" sx={{backgroundColor: 'orange'}}>
         <Toolbar>
           <IconButton
@@ -75,7 +74,7 @@ export default function Header(props: Props) {
             aria-label="open drawer"
             edge="start"
             onClick={handleDrawerToggle}
-            sx={{ mr: 2, display: { sm: 'none' } }}
+            sx={{ mr: 2, display: { md: 'none' } }}
           >
             <MenuIcon />
           </IconButton>
@@ -85,13 +84,24 @@ export default function Header(props: Props) {
             </ListItem>
           </IconButton>
           
-          <Box sx={{ display: { xs: 'none', sm: 'flex' } }}>
+          <Box sx={{ display: { xs:'none', sm: 'none', md: 'flex' } }}>
             {navItems.map(({title, path}) => (
               <ListItem 
               component={NavLink}
               to={path}
               key={path}
-              sx={ {color: 'white', fontSize:'35px', navStyles, justifyContent:'space-between'}}
+              sx={ {
+                color: 'white', 
+                fontSize:'35px', 
+                justifyContent:'space-between',
+                typography: 'h4',
+                '&:hover': {
+                    color : 'grey.500'
+                },
+                '&.active': {
+                    color: 'text.secondary'
+                }
+              }}
               >{title}</ListItem>
             ))}
           </Box>
@@ -107,7 +117,7 @@ export default function Header(props: Props) {
             keepMounted: true, // Better open performance on mobile.
           }}
           sx={{
-            display: { xs: 'block', sm: 'none' },
+            display: { sx: 'block', sm: 'block', md: 'none' },
             '& .MuiDrawer-paper': { boxSizing: 'border-box', width: drawerWidth },
           }}
         >

@@ -49,17 +49,15 @@ export default function HomePage() {
         marginBottom: '20vh',
         paddingLeft: '20px',
         paddingRight: '20px'
-
     }
 
     return (
-        // <Box sx={{ height: '100vh', background: "url(/img/course4.jpg) no-repeat center center fixed"}}>
-        <Box style={style}>
+        <>
+        <Box style={style} sx={{height: '100vh'}}>
             <Typography style={fontSize} align="center" sx={{color: 'white', paddingTop:'20px'}}>Welcome to Stamford Golf Club</Typography>
             <div style={{display: 'flex', justifyContent:'center'}}>
                 <span><GolfCourse sx={{color:"white", fontSize:'60px'}} /></span>
             </div>
-
             <div style={{display: 'flex', justifyContent:'center'}}>
                 <Paper elevation={2} style={margin} sx={{opacity:'0.8'}}>
                     <div style={{display: 'flex', justifyContent:'center'}}>
@@ -81,5 +79,6 @@ export default function HomePage() {
             </div>
             <Divider />
         </Box>
+        </>
     )
 }

@@ -35,7 +35,10 @@ export default function MiniHeader() {
         </DialogTitle>
         <DialogContent>
           <DialogContentText id="alert-dialog-description">
-            {`Course fully open, winter mats in use on the fairway, no winter greens ${day}-${month + 1}-${year}`}
+            {`Course fully open, winter mats in use on the fairway, no winter greens`}
+          </DialogContentText>
+          <DialogContentText>
+            {`Last updated  ${day}-${month + 1}-${year} `}
           </DialogContentText>
         </DialogContent>
         <DialogActions>
