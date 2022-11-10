@@ -19,10 +19,6 @@ export default function FunctionsPage() {
         return "h2"
     }
 
-    const textStyle = {
-
-    }
-
 
     return (
             <Box  sx={{width:'100%', display:'flex', justifyContent: 'space-between', alignContent:'center'}}>
