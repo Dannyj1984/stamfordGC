@@ -145,6 +145,7 @@ export default function GolfPage() {
             <Typography variant='h4'>Membership</Typography>
 
             <Paper sx={{width: '90%', marginTop: '10px', padding:'10px'}}>
+                <Typography variant="subtitle2">To apply for membership please complete the <a href="/docs/application-form.doc" download>application form</a> and return to the pro shop</Typography>
                 <Typography variant="h6">Benefits:</Typography>
                 <Typography>We run a full program of competitions. Our main competition day is Saturday which has a full summer program including medal rounds and our Majors. We also have competitions on Sunday morning, as well as a weekly Wednesday competition throughout the summer. Our competition start sheet allows new members to quickly meet others. Tee bookings are made in 30 minute time slots, with a draw being made to to decide on the groups.</Typography>
                 <br />
@@ -164,6 +165,65 @@ We are encouraging participation in golf for people of all ages and abilities. W
                 </Box>
                 <Divider />
                 <MembershipTable />
+            </Paper>
+        </Paper>
+        <Paper  elevation={4} sx={{backgroundColor:'#ebebeb',  display:'flex', flexDirection:'column', justifyContent:'flex-start', alignItems:'center', paddingBottom: '20px'}}>
+            <Typography variant='h4'>Societies</Typography>
+
+            <Paper sx={{width: '90%', marginTop: '10px', padding:'10px'}}>
+                <Typography variant="h6">Bookings:</Typography>
+                <Typography>Please see our ClubV1 booking page to book a tee time. Visitors are welcome at Stamford golf club every day of the week. Saturday morning is our member's competition day. Visitors are welcome in the afternoon and available tee times will be on ClubV1</Typography>
+                <br />
+                <Typography>If you have booked a tee time for one player, please be aware that other players may join you. If you have booked a tee time for a guest, you must have paid for him or her.</Typography>
+                <br />
+                <Typography>Please note - bookings which are cancelled on the day of play will not receive a refund.</Typography>
+                
+                <Divider />
+            </Paper>
+        </Paper>
+
+        <Paper  elevation={4} sx={{backgroundColor:'#c8d8ce',  display:'flex', flexDirection:'column', justifyContent:'flex-start', alignItems:'center', paddingBottom: '20px'}}>
+            <Typography variant='h4'>Special Offers</Typography>
+
+            <Paper sx={{width: '90%', marginTop: '10px', padding:'10px'}}>
+                <Typography variant="h6">Offers:</Typography>
+                <Typography>Please see our ClubV1 booking page to book a tee time. Visitors are welcome at Stamford golf club every day of the week. Saturday morning is our member's competition day. Visitors are welcome in the afternoon and available tee times will be on ClubV1</Typography>
+                <br />
+                <Typography>If you have booked a tee time for one player, please be aware that other players may join you. If you have booked a tee time for a guest, you must have paid for him or her.</Typography>
+                <br />
+                <Typography>Please note - bookings which are cancelled on the day of play will not receive a refund.</Typography>
+                
+                <Divider />
+            </Paper>
+        </Paper>
+
+        <Paper  elevation={4} sx={{backgroundColor:'#ebebeb',  display:'flex', flexDirection:'column', justifyContent:'flex-start', alignItems:'center', paddingBottom: '20px'}}>
+            <Typography variant='h4'>Opens</Typography>
+
+            <Paper sx={{width: '90%', marginTop: '10px', padding:'10px'}}>
+                <Typography variant="h6">Opens:</Typography>
+                <Typography>Please see our ClubV1 booking page to book a tee time. Visitors are welcome at Stamford golf club every day of the week. Saturday morning is our member's competition day. Visitors are welcome in the afternoon and available tee times will be on ClubV1</Typography>
+                <br />
+                <Typography>If you have booked a tee time for one player, please be aware that other players may join you. If you have booked a tee time for a guest, you must have paid for him or her.</Typography>
+                <br />
+                <Typography>Please note - bookings which are cancelled on the day of play will not receive a refund.</Typography>
+                
+                <Divider />
+            </Paper>
+        </Paper>
+
+        <Paper  elevation={4} sx={{backgroundColor:'#c8d8ce',  display:'flex', flexDirection:'column', justifyContent:'flex-start', alignItems:'center', paddingBottom: '20px'}}>
+            <Typography variant='h4'>Course Information</Typography>
+
+            <Paper sx={{width: '90%', marginTop: '10px', padding:'10px'}}>
+                <Typography variant="h6">Course Information:</Typography>
+                <Typography>Please see our ClubV1 booking page to book a tee time. Visitors are welcome at Stamford golf club every day of the week. Saturday morning is our member's competition day. Visitors are welcome in the afternoon and available tee times will be on ClubV1</Typography>
+                <br />
+                <Typography>If you have booked a tee time for one player, please be aware that other players may join you. If you have booked a tee time for a guest, you must have paid for him or her.</Typography>
+                <br />
+                <Typography>Please note - bookings which are cancelled on the day of play will not receive a refund.</Typography>
+                
+                <Divider />
             </Paper>
         </Paper>
         </>
