@@ -1,7 +1,7 @@
 import { Box, Button, Divider, List, ListItem, Paper, Typography } from "@mui/material";
 import { NavLink } from "react-router-dom";
 import ArrowDropDownCircleIcon from '@mui/icons-material/ArrowDropDownCircle';
-import React, { useRef, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { Container } from "@mui/system";
 import MembershipTable from "./MembershipTable";
 import ScrollToTop from "../../app/layout/ScrollToTop";
@@ -35,6 +35,14 @@ export default function GolfPage() {
     }
 
     window.addEventListener('resize', resizeListener);
+
+    function setScreenSize() {
+        if(window.innerWidth <= 900) setMobile(true)
+    }
+
+    useEffect(() => {
+        setScreenSize();
+    }, [])
 
     const imgStyle = {
         background: `url(/img/course4.jpg) no-repeat`,
@@ -146,7 +154,7 @@ export default function GolfPage() {
         }
         <Paper elevation={4} sx={{ height: '30vh', display:'flex', flexDirection:'column', justifyContent:'flex-start', alignItems:'center', paddingTop:'3rem', paddingLeft:'2em'}}>
             <img src="/img/stamford.webp" alt="logo" width={80} height={80}/>
-            <Typography variant='h5'>{`We offer a warm welcome to visiting parties of any size viewing on a ${mobile}`}</Typography>
+            <Typography variant='h5'>We offer a warm welcome to visiting parties of any size</Typography>
         </Paper>
         <Divider />
 
