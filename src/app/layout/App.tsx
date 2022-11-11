@@ -12,6 +12,7 @@ import Header from "./Header";
 import MiniHeader from "./MiniHeader";
 import HomeLinks from "../../features/home/HomeLinks";
 import Copyright from "./Copyright";
+import './App.css';
 
 function App() {
     

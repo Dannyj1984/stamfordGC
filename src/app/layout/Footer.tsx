@@ -13,7 +13,9 @@ return (
                     <ListItem component={NavLink} color='text.secondary' to='/fees' sx={{textDecoration:'none', color: 'black'}}>Green fees</ListItem>
                     <ListItem component={NavLink} color='text.secondary' to='/course' sx={{textDecoration:'none', color: 'black'}}>Course info</ListItem>
                     <ListItem component={NavLink} color='text.secondary' to='/membership' sx={{textDecoration:'none', color: 'black'}}>Membership</ListItem>
-                    <ListItem component={NavLink} color='text.secondary' to='/flyover' sx={{textDecoration:'none', color: 'black'}}>Course flyover</ListItem>
+                    <ListItem component={NavLink} color='text.secondary' to='/societies' sx={{textDecoration:'none', color: 'black'}}>Societies</ListItem>
+                    <ListItem component={NavLink} color='text.secondary' to='/offers' sx={{textDecoration:'none', color: 'black'}}>Special offers</ListItem>
+                    <ListItem component={NavLink} color='text.secondary' to='/opens' sx={{textDecoration:'none', color: 'black'}}>Opens</ListItem>
                 </List>
             </Grid>
             <Grid item xs={12} sm={3}>

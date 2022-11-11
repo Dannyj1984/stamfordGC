@@ -1,24 +1,30 @@
 import { Box, Button, Divider, List, ListItem, Paper, Typography } from "@mui/material";
 import { NavLink } from "react-router-dom";
 import ArrowDropDownCircleIcon from '@mui/icons-material/ArrowDropDownCircle';
-import { useState } from "react";
+import React, { useRef, useState } from "react";
 import { Container } from "@mui/system";
 import MembershipTable from "./MembershipTable";
-
-const navItems = [
-    {title: 'Green Fees', path: '/fees'},
-    {title: 'Membership', path: '/membership'},
-    {title: 'Societies', path: '/societies'},
-    {title: 'Special Offers', path: '/offers'},
-    {title: 'Opens', path: '/opens'},
-    {title: 'Course Information', path: '/course'}
-];
+import ScrollToTop from "../../app/layout/ScrollToTop";
     
 
 export default function GolfPage() {
 
     const [showLinks, setShowLinks] = useState(false);
     const [mobile, setMobile] = useState(false);
+    const fees = useRef(null);
+    const membership = useRef(null);
+    const societies = useRef(null);
+    const offers = useRef(null);
+    const course = useRef(null);
+    const opens = useRef(null);
+
+    const scrollToSection = (elementRef: any) => {
+        window.scrollTo({
+            top: elementRef.current.offsetTop - 110,
+            behavior: 'smooth'
+        })
+    }
+
 
     function resizeListener() {
         if (window.innerWidth <= 900) {
@@ -47,29 +53,67 @@ export default function GolfPage() {
 
     return (
         <>
+        <ScrollToTop />
         <Box component='img' style={imgStyle} sx={{height:'40vh', width:'100%', objectFit: 'fill'}}>
         </Box>
         {!mobile &&
-        <Box sx={{ display: { xs:'none', sm: 'none', md: 'flex' } }}>
-        {navItems.map(({title, path}) => (
-          <ListItem 
-          component={NavLink}
-          to={path}
-          key={path}
-          sx={ {
-            color: 'black',  
-            justifyContent:'space-around',
-            typography: 'h6',
-            '&:hover': {
-                color : 'grey.500'
-            },
-            '&.active': {
-                color: 'text.secondary'
-            }
-          }}
-          >{title}</ListItem>
-        ))}
-      </Box>
+        <Container >
+            <List sx={{display: 'flex', flexDirection:'row'}}>
+                <ListItem  color='text.secondary' onClick={() => scrollToSection(fees)} sx={{
+                    textDecoration:'none', 
+                    color: 'black', 
+                    justifyContent:'space-around',
+                    cursor:'pointer',
+                    typography: 'h6',
+                        '&:hover': {
+                            color : 'grey.500'
+                        },
+                        '&.active': {
+                            color: 'text.secondary'
+                        }
+            }}>Green fees</ListItem>
+                <ListItem  color='text.secondary' onClick={() => scrollToSection(membership)} sx={{textDecoration:'none', color: 'black',justifyContent:'space-around',cursor:'pointer',
+                    typography: 'h6',
+                        '&:hover': {
+                            color : 'grey.500'
+                        },
+                        '&.active': {
+                            color: 'text.secondary'
+                        }}}>Membership</ListItem>
+                <ListItem  color='text.secondary' onClick={() => scrollToSection(societies)} sx={{textDecoration:'none', color: 'black',justifyContent:'space-around', cursor:'pointer',
+                    typography: 'h6',
+                        '&:hover': {
+                            color : 'grey.500'
+                        },
+                        '&.active': {
+                            color: 'text.secondary'
+                        }}}>Societies</ListItem>
+                <ListItem  color='text.secondary' onClick={() => scrollToSection(offers)}  sx={{textDecoration:'none', color: 'black',justifyContent:'space-around',cursor:'pointer',
+                    typography: 'h6',
+                        '&:hover': {
+                            color : 'grey.500'
+                        },
+                        '&.active': {
+                            color: 'text.secondary'
+                        }}}>Special Offers</ListItem>
+                <ListItem  color='text.secondary' onClick={() => scrollToSection(opens)}  sx={{textDecoration:'none', color: 'black',justifyContent:'space-around', cursor:'pointer',
+                    typography: 'h6',
+                        '&:hover': {
+                            color : 'grey.500'
+                        },
+                        '&.active': {
+                            color: 'text.secondary'
+                        }}}>Opens</ListItem>
+                <ListItem  color='text.secondary' onClick={() => scrollToSection(course)}  sx={{textDecoration:'none', color: 'black',justifyContent:'space-around', cursor:'pointer',
+                    typography: 'h6',
+                        '&:hover': {
+                            color : 'grey.500'
+                        },
+                        '&.active': {
+                            color: 'text.secondary'
+                        }}}>Course Information</ListItem>
+            </List> 
+        </Container>
         }
         {mobile &&
         <Box component='nav' sx={{height: '5vh'}}>
@@ -90,57 +134,62 @@ export default function GolfPage() {
         <Box >
             <Container>
                 <List>
-                    <ListItem component={NavLink} color='text.secondary' to='/fees' sx={{textDecoration:'none', color: 'black'}}>Green fees</ListItem>
-                    <ListItem component={NavLink} color='text.secondary' to='/membership' sx={{textDecoration:'none', color: 'black'}}>Membership</ListItem>
-                    <ListItem component={NavLink} color='text.secondary' to='/societies' sx={{textDecoration:'none', color: 'black'}}>Societies</ListItem>
-                    <ListItem component={NavLink} color='text.secondary' to='/course' sx={{textDecoration:'none', color: 'black'}}>Course Information</ListItem>
-                    <ListItem component={NavLink} color='text.secondary' to='/opens' sx={{textDecoration:'none', color: 'black'}}>Opens</ListItem>
-                    <ListItem component={NavLink} color='text.secondary' to='/offers' sx={{textDecoration:'none', color: 'black'}}>Special Offers</ListItem>
+                    <ListItem  color='text.secondary' onClick={() => scrollToSection(fees)} sx={{textDecoration:'none', color: 'black'}}>Green fees</ListItem>
+                    <ListItem  color='text.secondary' onClick={() => scrollToSection(membership)} sx={{textDecoration:'none', color: 'black'}}>Membership</ListItem>
+                    <ListItem  color='text.secondary' onClick={() => scrollToSection(societies)} sx={{textDecoration:'none', color: 'black'}}>Societies</ListItem>
+                    <ListItem  color='text.secondary' onClick={() => scrollToSection(offers)}  sx={{textDecoration:'none', color: 'black'}}>Special Offers</ListItem>
+                    <ListItem  color='text.secondary' onClick={() => scrollToSection(opens)}  sx={{textDecoration:'none', color: 'black'}}>Opens</ListItem>
+                    <ListItem  color='text.secondary' onClick={() => scrollToSection(course)}  sx={{textDecoration:'none', color: 'black'}}>Course Info</ListItem>
                 </List> 
             </Container>
         </Box>   
         }
-        <Paper elevation={4} sx={{ height: '30vh', display:'flex', flexDirection:'column', justifyContent:'flex-start', alignItems:'center', paddingTop:'3rem'}}>
+        <Paper elevation={4} sx={{ height: '30vh', display:'flex', flexDirection:'column', justifyContent:'flex-start', alignItems:'center', paddingTop:'3rem', paddingLeft:'2em'}}>
             <img src="/img/stamford.webp" alt="logo" width={80} height={80}/>
-            <Typography variant='h5'>We offer a warm welcome to visiting parties of any size</Typography>
+            <Typography variant='h5'>{`We offer a warm welcome to visiting parties of any size viewing on a ${mobile}`}</Typography>
         </Paper>
         <Divider />
-        <Paper  elevation={4} sx={{backgroundColor:'#ebebeb', height: '85vh', display:'flex', flexDirection:'column', justifyContent:'flex-start', alignItems:'center'}}>
-            <Typography variant='h4'>Green Fees</Typography>
-            <Paper elevation={4} sx={{width: '90%', marginTop: '10px', padding:'10px'}}>
-                <Box sx={{display:'flex', flexDirection:'column', justifyContent:'flex-start', backgroundColor:'white', alignItems:'center'}}>
-                    <Typography variant="h6">Winter 2022/23 Green Fees</Typography>
-                    <Typography sx={{fontSize:'1rem'}}>1st Nov - 31st March</Typography>
-                </Box>
-                <Divider />
-                <Box sx={{backgroundColor:'white'}}>
-                    <Typography >Monday - £20 per round (Clubhouse not open)</Typography>
-                    <Typography >Tuesday - Friday £29 per round</Typography>
-                    <Typography >Saturday - £30 per round (After 1:30pm)</Typography>
-                    <Typography >Sunday - £30 per round (After 10am)</Typography>
-                </Box>
-            </Paper>
 
-            <Paper sx={{width: '90%', marginTop: '10px', padding:'10px'}}>
-                <Box sx={{display:'flex', flexDirection:'column', justifyContent:'flex-start', backgroundColor:'white', alignItems:'center'}}>
-                    <Typography variant="h6">Summer 2023 Green Fees</Typography>
-                </Box>
-                <Divider />
-                <Box sx={{backgroundColor:'white'}}>
-                    <Typography >Monday - £25 per round (Clubhouse not open)</Typography>
-                    <Typography >Tuesday - Friday £35 per round</Typography>
-                    <Typography >Saturday - £40 per round (After 1:30pm)</Typography>
-                    <Typography >Sunday - £40 per round (After 10am)</Typography>
-                </Box>
+        {/* fees */}
+        <div ref={fees}>
+            <Paper  elevation={4} sx={{backgroundColor:'#ebebeb', height: '50vh', display:'flex', flexDirection:'column', justifyContent:'flex-start', alignItems:'center'}}>
+                <Typography variant='h4'>Green Fees</Typography>
+                <Paper elevation={4} sx={{width: '90%', marginTop: '10px', padding:'10px'}}>
+                    <Box sx={{display:'flex', flexDirection:'column', justifyContent:'flex-start', backgroundColor:'white', alignItems:'center'}}>
+                        <Typography variant="h6">Winter 2022/23 Green Fees</Typography>
+                        <Typography sx={{fontSize:'1rem'}}>1st Nov - 31st March</Typography>
+                    </Box>
+                    <Divider />
+                    <Box sx={{backgroundColor:'white'}}>
+                        <Typography >Monday - £20 per round (Clubhouse not open)</Typography>
+                        <Typography >Tuesday - Friday £29 per round</Typography>
+                        <Typography >Saturday - £30 per round (After 1:30pm)</Typography>
+                        <Typography >Sunday - £30 per round (After 10am)</Typography>
+                    </Box>
+                </Paper>
+                <Paper sx={{width: '90%', marginTop: '10px', padding:'10px'}}>
+                    <Box sx={{display:'flex', flexDirection:'column', justifyContent:'flex-start', backgroundColor:'white', alignItems:'center'}}>
+                        <Typography variant="h6">Summer 2023 Green Fees</Typography>
+                    </Box>
+                    <Divider />
+                    <Box sx={{backgroundColor:'white'}}>
+                        <Typography >Monday - £25 per round (Clubhouse not open)</Typography>
+                        <Typography >Tuesday - Friday £35 per round</Typography>
+                        <Typography >Saturday - £40 per round (After 1:30pm)</Typography>
+                        <Typography >Sunday - £40 per round (After 10am)</Typography>
+                    </Box>
+                </Paper>
+                <ListItem 
+                    sx={{justifyContent:'center'}}
+                    component={NavLink} 
+                    to={{pathname: `https://stamford.hub.clubv1.com/visitors/TeeSheet?date=${year}-${month+1}-${day}`}} target="_blank">
+                        <Button variant="contained">Online Booking</Button>
+                    </ListItem>
             </Paper>
-            <ListItem 
-                sx={{justifyContent:'center'}}
-                component={NavLink} 
-                to={{pathname: `https://stamford.hub.clubv1.com/visitors/TeeSheet?date=${year}-${month+1}-${day}`}} target="_blank">
-                    <Button variant="contained">Online Booking</Button>
-                </ListItem>
-            
-        </Paper>
+        </div>
+        
+        {/* Membership */}
+        <div ref={membership}>
         <Paper  elevation={4} sx={{backgroundColor:'#c8d8ce',  display:'flex', flexDirection:'column', justifyContent:'flex-start', alignItems:'center', paddingBottom: '20px'}}>
             <Typography variant='h4'>Membership</Typography>
 
@@ -167,6 +216,8 @@ We are encouraging participation in golf for people of all ages and abilities. W
                 <MembershipTable />
             </Paper>
         </Paper>
+        </div>
+        <div ref={societies}>
         <Paper  elevation={4} sx={{backgroundColor:'#ebebeb',  display:'flex', flexDirection:'column', justifyContent:'flex-start', alignItems:'center', paddingBottom: '20px'}}>
             <Typography variant='h4'>Societies</Typography>
 
@@ -181,7 +232,8 @@ We are encouraging participation in golf for people of all ages and abilities. W
                 <Divider />
             </Paper>
         </Paper>
-
+        </div>
+        <div ref={offers}>
         <Paper  elevation={4} sx={{backgroundColor:'#c8d8ce',  display:'flex', flexDirection:'column', justifyContent:'flex-start', alignItems:'center', paddingBottom: '20px'}}>
             <Typography variant='h4'>Special Offers</Typography>
 
@@ -196,7 +248,8 @@ We are encouraging participation in golf for people of all ages and abilities. W
                 <Divider />
             </Paper>
         </Paper>
-
+        </div>
+        <div ref={opens}>
         <Paper  elevation={4} sx={{backgroundColor:'#ebebeb',  display:'flex', flexDirection:'column', justifyContent:'flex-start', alignItems:'center', paddingBottom: '20px'}}>
             <Typography variant='h4'>Opens</Typography>
 
@@ -211,7 +264,8 @@ We are encouraging participation in golf for people of all ages and abilities. W
                 <Divider />
             </Paper>
         </Paper>
-
+        </div>
+        <div ref={course}>
         <Paper  elevation={4} sx={{backgroundColor:'#c8d8ce',  display:'flex', flexDirection:'column', justifyContent:'flex-start', alignItems:'center', paddingBottom: '20px'}}>
             <Typography variant='h4'>Course Information</Typography>
 
@@ -226,6 +280,7 @@ We are encouraging participation in golf for people of all ages and abilities. W
                 <Divider />
             </Paper>
         </Paper>
+        </div>
         </>
     )
 }
