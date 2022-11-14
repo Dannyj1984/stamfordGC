@@ -1,5 +1,4 @@
 import { Box, Divider, Paper, Typography } from "@mui/material";
-import { useEffect, useState } from "react";
 import ScrollToTop from "../../app/layout/ScrollToTop";
 
 
