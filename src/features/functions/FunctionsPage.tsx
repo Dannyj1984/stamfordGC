@@ -1,33 +1,31 @@
-import { Box, Button, Container, Divider, List, ListItem, Paper, Typography } from "@mui/material";
-import { useEffect, useRef, useState } from "react";
-import { NavLink } from "react-router-dom";
+import { Box, Divider, Paper, Typography } from "@mui/material";
+import { useEffect, useState } from "react";
 import ScrollToTop from "../../app/layout/ScrollToTop";
-import ArrowDropDownCircleIcon from '@mui/icons-material/ArrowDropDownCircle';
 
 
 
 export default function FunctionsPage() {
 
-    const [mobile, setMobile] = useState(false);
+    // const [mobile, setMobile] = useState(false);
 
 
-    function resizeListener() {
-        if (window.innerWidth <= 900) {
-            setMobile(true);
-        } else {
-            setMobile(false);
-        }
-    }
+    // function resizeListener() {
+    //     if (window.innerWidth <= 900) {
+    //         setMobile(true);
+    //     } else {
+    //         setMobile(false);
+    //     }
+    // }
 
-    window.addEventListener('resize', resizeListener);
+    // window.addEventListener('resize', resizeListener);
 
-    function setScreenSize() {
-        if(window.innerWidth <= 900) setMobile(true)
-    }
+    // function setScreenSize() {
+    //     if(window.innerWidth <= 900) setMobile(true)
+    // }
 
-    useEffect(() => {
-        setScreenSize();
-    }, [])
+    // useEffect(() => {
+    //     setScreenSize();
+    // }, [])
 
     const imgStyle = {
         background: `url(/img/wedding.jpeg) no-repeat`,
