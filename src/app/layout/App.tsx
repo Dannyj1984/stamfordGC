@@ -14,6 +14,7 @@ import HomeLinks from "../../features/home/HomeLinks";
 import Copyright from "./Copyright";
 import './App.css';
 import CoursePage from "../../features/course/CoursePage";
+import NotFound from "./NotFound";
 
 function App() {
     
@@ -32,7 +33,7 @@ function App() {
             <Route exact path='/course' component={CoursePage} />
             <Route exact path='/about' component={AboutPage} />
             <Route exact path='/contact' component={ContactPage} />
-            {/* <Route  component={NotFound} /> */}
+            <Route path='/*'  component={NotFound} />
           </Switch>
         </Container>
         <HomeLinks />
