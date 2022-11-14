@@ -1,4 +1,3 @@
-import * as React from 'react';
 import Table from '@mui/material/Table';
 import TableBody from '@mui/material/TableBody';
 import TableCell from '@mui/material/TableCell';
@@ -49,7 +48,7 @@ const rowsFemale = [
 export default function MembershipTable() {
   return (
     <>
-    <TableContainer component={Paper}>
+    <TableContainer component={Paper} >
       <Table sx={{ minWidth: 300 }} aria-label="simple table">
         <TableHead>
           <TableRow>

@@ -1,7 +1,7 @@
 import { Box, Button, Divider, List, ListItem, Paper, Typography } from "@mui/material";
 import { NavLink } from "react-router-dom";
 import ArrowDropDownCircleIcon from '@mui/icons-material/ArrowDropDownCircle';
-import React, { useEffect, useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { Container } from "@mui/system";
 import MembershipTable from "./MembershipTable";
 import ScrollToTop from "../../app/layout/ScrollToTop";
