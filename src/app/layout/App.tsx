@@ -13,6 +13,7 @@ import MiniHeader from "./MiniHeader";
 import HomeLinks from "../../features/home/HomeLinks";
 import Copyright from "./Copyright";
 import './App.css';
+import CoursePage from "../../features/course/CoursePage";
 
 function App() {
     
@@ -28,6 +29,7 @@ function App() {
             <Route exact path='/golf' component={GolfPage} />
             <Route exact path='/members' component={MembersPage} />
             <Route exact path='/functions' component={FunctionsPage} />
+            <Route exact path='/course' component={CoursePage} />
             <Route exact path='/about' component={AboutPage} />
             <Route exact path='/contact' component={ContactPage} />
             {/* <Route  component={NotFound} /> */}

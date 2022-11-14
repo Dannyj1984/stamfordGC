@@ -1,29 +1,83 @@
-import { Box, Typography } from "@mui/material";
-import { useState } from "react";
+import { Box, Button, Container, Divider, List, ListItem, Paper, Typography } from "@mui/material";
+import { useEffect, useRef, useState } from "react";
+import { NavLink } from "react-router-dom";
+import ScrollToTop from "../../app/layout/ScrollToTop";
+import ArrowDropDownCircleIcon from '@mui/icons-material/ArrowDropDownCircle';
 
 
 
 export default function FunctionsPage() {
 
-    const [innerWidth, setInnerWidth] = useState(window.innerWidth);
+    const [mobile, setMobile] = useState(false);
+
 
     function resizeListener() {
-        setInnerWidth(window.innerWidth);
+        if (window.innerWidth <= 900) {
+            setMobile(true);
+        } else {
+            setMobile(false);
+        }
     }
 
     window.addEventListener('resize', resizeListener);
 
-    function getTextSize(innerWidth: number) {
-        if (innerWidth > 500) return "h3"
-        if (innerWidth <=500) return "h5"
-        return "h2"
+    function setScreenSize() {
+        if(window.innerWidth <= 900) setMobile(true)
     }
 
+    useEffect(() => {
+        setScreenSize();
+    }, [])
+
+    const imgStyle = {
+        background: `url(/img/wedding.jpeg) no-repeat`,
+        backgroundSize: '100% 100%',
+        maxHeight: 'auto',
+        backgroundPosition: '25% 65%'
+    }
 
     return (
-            <Box  sx={{width:'100%', display:'flex', justifyContent: 'space-between', alignContent:'center'}}>
-                <Typography variant={getTextSize(innerWidth)} sx={{height: '100vh'}}>Functions page</Typography>
-                <Typography variant={getTextSize(innerWidth)} sx={{height: '100vh'}}>Functions page</Typography>
-            </Box>
+        <>
+        <ScrollToTop />
+        <Box component='img' style={imgStyle} sx={{height:'40vh', width:'100%', objectFit: 'fill'}}>
+        </Box>
+        <Paper elevation={4} sx={{ height: '50vh', display:'flex', flexDirection:'column', justifyContent:'flex-start', alignItems:'center', paddingTop:'3rem', paddingLeft:'2em'}}>
+            <img src="/img/stamford.webp" alt="logo" width={80} height={80}/>
+            <Typography variant='h5' sx={{whiteSpace:'pre-line', paddingTop: '20px'}}>{`We offer a warm welcome to visiting parties of any size \n
+            Bookings can be made via the online booking system or via the pro shop`}</Typography>
+        </Paper>
+        <Divider />
+
+            <Paper  elevation={4} sx={{backgroundColor:'#ebebeb', height: '70vh', display:'flex', flexDirection:'column', justifyContent:'flex-start', alignItems:'center'}}>
+                <Typography variant='h4'>Functions</Typography>
+                <Paper elevation={4} sx={{width: '70%', marginTop: '10px', padding:'10px'}}>
+                    <Box sx={{display:'flex', flexDirection:'column', justifyContent:'flex-start', backgroundColor:'white', alignItems:'center'}}>
+                        <Typography variant="h6">Winter 2022/23 Green Fees</Typography>
+                        <Typography sx={{fontSize:'1rem'}}>1st Nov - 31st March</Typography>
+                    </Box>
+                    <Divider />
+                    <Box sx={{backgroundColor:'white'}}>
+                        <Typography >Monday - £20 per round (Clubhouse not open)</Typography>
+                        <Typography >Tuesday - Friday £29 per round</Typography>
+                        <Typography >Saturday - £30 per round (After 1:30pm)</Typography>
+                        <Typography >Sunday - £30 per round (After 10am)</Typography>
+                    </Box>
+                </Paper>
+                <Paper sx={{width: '70%', marginTop: '10px', padding:'10px'}}>
+                    <Box sx={{display:'flex', flexDirection:'column', justifyContent:'flex-start', backgroundColor:'white', alignItems:'center'}}>
+                        <Typography variant="h6">Summer 2023 Green Fees</Typography>
+                    </Box>
+                    <Divider />
+                    <Box sx={{backgroundColor:'white'}}>
+                        <Typography >Monday - £25 per round (Clubhouse not open)</Typography>
+                        <Typography >Tuesday - Friday £35 per round</Typography>
+                        <Typography >Saturday - £40 per round (After 1:30pm)</Typography>
+                        <Typography >Sunday - £40 per round (After 10am)</Typography>
+                    </Box>
+                </Paper>
+            </Paper>
+        
+        
+        </>
     )   
 }

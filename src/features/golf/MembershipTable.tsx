@@ -42,7 +42,7 @@ const rowsFemale = [
   ];
 
   const rowsOther = [
-    createData('Academy membership (see professional for info', 312.50, 312.50),
+    createData('Academy membership (conditions apply)', 312.50, 312.50),
     createData('Social', 25, 25)
   ];
 
@@ -134,7 +134,7 @@ export default function MembershipTable() {
 <Table sx={{ minWidth: 300 }} aria-label="simple table">
   <TableHead>
     <TableRow>
-      <TableCell>Membership Category (Other)</TableCell>
+      <TableCell>Membership Category (Junior)</TableCell>
       <TableCell align="right">2022</TableCell>
       <TableCell align="right">2023</TableCell>
     </TableRow>
@@ -155,6 +155,7 @@ export default function MembershipTable() {
   </TableBody>
 </Table>
 </TableContainer>
+<Divider />
 </>
   );
 }

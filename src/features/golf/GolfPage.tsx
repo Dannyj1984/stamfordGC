@@ -46,8 +46,9 @@ export default function GolfPage() {
 
     const imgStyle = {
         background: `url(/img/course4.jpg) no-repeat`,
-        backgroundSize: '100% 100%',
-        maxHeight: '400px'
+        backgroundSize: 'cover',
+        maxHeight: 'auto',
+        backgroundPosition: '25% 65%'
     }
 
     const showLinksFunc = () => {
@@ -152,17 +153,18 @@ export default function GolfPage() {
             </Container>
         </Box>   
         }
-        <Paper elevation={4} sx={{ height: '30vh', display:'flex', flexDirection:'column', justifyContent:'flex-start', alignItems:'center', paddingTop:'3rem', paddingLeft:'2em'}}>
+        <Paper elevation={4} sx={{ height: '50vh', display:'flex', flexDirection:'column', justifyContent:'flex-start', alignItems:'center', paddingTop:'3rem', paddingLeft:'2em'}}>
             <img src="/img/stamford.webp" alt="logo" width={80} height={80}/>
-            <Typography variant='h5'>We offer a warm welcome to visiting parties of any size</Typography>
+            <Typography variant='h5' sx={{whiteSpace:'pre-line', paddingTop: '20px'}}>{`We offer a warm welcome to visiting parties of any size \n
+            Bookings can be made via the online booking system or via the pro shop`}</Typography>
         </Paper>
         <Divider />
 
         {/* fees */}
         <div ref={fees}>
-            <Paper  elevation={4} sx={{backgroundColor:'#ebebeb', height: '50vh', display:'flex', flexDirection:'column', justifyContent:'flex-start', alignItems:'center'}}>
+            <Paper  elevation={4} sx={{backgroundColor:'#ebebeb', height: '70vh', display:'flex', flexDirection:'column', justifyContent:'flex-start', alignItems:'center'}}>
                 <Typography variant='h4'>Green Fees</Typography>
-                <Paper elevation={4} sx={{width: '90%', marginTop: '10px', padding:'10px'}}>
+                <Paper elevation={4} sx={{width: '70%', marginTop: '10px', padding:'10px'}}>
                     <Box sx={{display:'flex', flexDirection:'column', justifyContent:'flex-start', backgroundColor:'white', alignItems:'center'}}>
                         <Typography variant="h6">Winter 2022/23 Green Fees</Typography>
                         <Typography sx={{fontSize:'1rem'}}>1st Nov - 31st March</Typography>
@@ -175,7 +177,7 @@ export default function GolfPage() {
                         <Typography >Sunday - £30 per round (After 10am)</Typography>
                     </Box>
                 </Paper>
-                <Paper sx={{width: '90%', marginTop: '10px', padding:'10px'}}>
+                <Paper sx={{width: '70%', marginTop: '10px', padding:'10px'}}>
                     <Box sx={{display:'flex', flexDirection:'column', justifyContent:'flex-start', backgroundColor:'white', alignItems:'center'}}>
                         <Typography variant="h6">Summer 2023 Green Fees</Typography>
                     </Box>
@@ -201,7 +203,7 @@ export default function GolfPage() {
         <Paper  elevation={4} sx={{backgroundColor:'#c8d8ce',  display:'flex', flexDirection:'column', justifyContent:'flex-start', alignItems:'center', paddingBottom: '20px'}}>
             <Typography variant='h4'>Membership</Typography>
 
-            <Paper sx={{width: '90%', marginTop: '10px', padding:'10px'}}>
+            <Paper sx={{width: '70%', marginTop: '10px', padding:'10px'}}>
                 <Typography variant="subtitle2">To apply for membership please complete the <a href="/docs/application-form.doc" download>application form</a> and return to the pro shop</Typography>
                 <Typography variant="h6">Benefits:</Typography>
                 <Typography>We run a full program of competitions. Our main competition day is Saturday which has a full summer program including medal rounds and our Majors. We also have competitions on Sunday morning, as well as a weekly Wednesday competition throughout the summer. Our competition start sheet allows new members to quickly meet others. Tee bookings are made in 30 minute time slots, with a draw being made to to decide on the groups.</Typography>
@@ -229,7 +231,7 @@ We are encouraging participation in golf for people of all ages and abilities. W
         <Paper  elevation={4} sx={{backgroundColor:'#ebebeb',  display:'flex', flexDirection:'column', justifyContent:'flex-start', alignItems:'center', paddingBottom: '20px'}}>
             <Typography variant='h4'>Societies</Typography>
 
-            <Paper sx={{width: '90%', marginTop: '10px', padding:'10px'}}>
+            <Paper sx={{width: '70%', marginTop: '10px', padding:'10px'}}>
                 <Typography variant="h6">Bookings:</Typography>
                 <Typography>Please see our ClubV1 booking page to book a tee time. Visitors are welcome at Stamford golf club every day of the week. Saturday morning is our member's competition day. Visitors are welcome in the afternoon and available tee times will be on ClubV1</Typography>
                 <br />
@@ -245,7 +247,7 @@ We are encouraging participation in golf for people of all ages and abilities. W
         <Paper  elevation={4} sx={{backgroundColor:'#c8d8ce',  display:'flex', flexDirection:'column', justifyContent:'flex-start', alignItems:'center', paddingBottom: '20px'}}>
             <Typography variant='h4'>Special Offers</Typography>
 
-            <Paper sx={{width: '90%', marginTop: '10px', padding:'10px'}}>
+            <Paper sx={{width: '70%', marginTop: '10px', padding:'10px'}}>
                 <Typography variant="h6">Offers:</Typography>
                 <Typography>Please see our ClubV1 booking page to book a tee time. Visitors are welcome at Stamford golf club every day of the week. Saturday morning is our member's competition day. Visitors are welcome in the afternoon and available tee times will be on ClubV1</Typography>
                 <br />
@@ -261,7 +263,7 @@ We are encouraging participation in golf for people of all ages and abilities. W
         <Paper  elevation={4} sx={{backgroundColor:'#ebebeb',  display:'flex', flexDirection:'column', justifyContent:'flex-start', alignItems:'center', paddingBottom: '20px'}}>
             <Typography variant='h4'>Opens</Typography>
 
-            <Paper sx={{width: '90%', marginTop: '10px', padding:'10px'}}>
+            <Paper sx={{width: '70%', marginTop: '10px', padding:'10px'}}>
                 <Typography variant="h6">Opens:</Typography>
                 <Typography>Please see our ClubV1 booking page to book a tee time. Visitors are welcome at Stamford golf club every day of the week. Saturday morning is our member's competition day. Visitors are welcome in the afternoon and available tee times will be on ClubV1</Typography>
                 <br />
@@ -277,7 +279,7 @@ We are encouraging participation in golf for people of all ages and abilities. W
         <Paper  elevation={4} sx={{backgroundColor:'#c8d8ce',  display:'flex', flexDirection:'column', justifyContent:'flex-start', alignItems:'center', paddingBottom: '20px'}}>
             <Typography variant='h4'>Course Information</Typography>
 
-            <Paper sx={{width: '90%', marginTop: '10px', padding:'10px'}}>
+            <Paper sx={{width: '70%', marginTop: '10px', padding:'10px'}}>
                 <Typography variant="h6">Course Information:</Typography>
                 <Typography>Please see our ClubV1 booking page to book a tee time. Visitors are welcome at Stamford golf club every day of the week. Saturday morning is our member's competition day. Visitors are welcome in the afternoon and available tee times will be on ClubV1</Typography>
                 <br />
