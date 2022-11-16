@@ -27,7 +27,7 @@ export default function Footer() {
     }, [])
 
     const imgStyle = {
-        background: `url(/img/clubhouse.jpeg) no-repeat`,
+        background: `url(/img/clubhouseLong1.webp) no-repeat`,
         backgroundSize: '100% 100%',
         maxHeight: 'auto'
     }
@@ -40,7 +40,8 @@ return (
                 width:'100%', 
                 objectFit: 'cover', 
                 display:'flex',
-                justifyContent:'center'}}
+                justifyContent:'center',
+                marginTop: '-15px'}}
             >
             
             <Typography 

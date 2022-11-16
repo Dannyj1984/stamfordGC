@@ -5,7 +5,7 @@ import { NavLink } from 'react-router-dom';
 export default function Footer() {
 
 return (
-    <Box sx={{ width:"100%", mt: "15px", backgroundColor: 'lightgrey'}}>
+    <Box sx={{ width:"100%", mt: "15px", backgroundColor: '#E4F3FD'}}>
         <Grid container spacing={2} sx={{padding:'15px'}}>
             <Grid item xs={12} sm={3}>
                 <Typography variant='h6'>Golf</Typography>

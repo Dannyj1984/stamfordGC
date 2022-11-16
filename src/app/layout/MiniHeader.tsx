@@ -47,8 +47,8 @@ export default function MiniHeader() {
             }
             
             <Box sx={{display: 'flex', width: '30%'}}>
-              <ListItem sx={{color:'orange', fontSize:'1.5rem'}} component={NavLink} to={{pathname: `https://stamford.hub.clubv1.com/visitors/TeeSheet?date=${year}-${month+1}-${day}`}} target="_blank">Visitor booking</ListItem>
-              <ListItem onClick={setStatus} sx={{color:'orange', cursor:'pointer', fontSize:'1.5rem'}}><span style={{
+              <ListItem sx={{color:'orange', fontSize:mobile? '1rem' : '1.5rem'}} component={NavLink} to={{pathname: `https://stamford.hub.clubv1.com/visitors/TeeSheet?date=${year}-${month+1}-${day}`}} target="_blank">Visitor booking</ListItem>
+              <ListItem onClick={setStatus} sx={{color:'orange', cursor:'pointer', fontSize:mobile ? '1rem' : '1.5rem'}}><span style={{
                 top:'1px', marginLeft: '6px', marginRight: '5px', display:'inline-block', backgroundColor: '#00ff0c',
                 boxShadow: '0 0 1px 2px #00ff0c', position:'relative', width:'10px', height: '10px', borderRadius:'50%'
               }}></span>Course status</ListItem>
