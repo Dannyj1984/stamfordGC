@@ -9,7 +9,7 @@ const holeDetailsInfo = [
     par: 4,
     si: 7,
     video: 'https://m.youtube.com/watch?v=exuBxno6kbU&t=149s',
-    picUrl: 'hole1.webp',
+    picUrl: '/img/hole4.webp',
     proInfo: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis esse assumenda praesentium modi tempora fugiat laudantium, quod eligendi ab minus. Labore quis ex autem id atque possimus vel a corporis.'
   },
   {
@@ -17,7 +17,7 @@ const holeDetailsInfo = [
     length: 420,
     par: 4,
     si: 1,
-    picUrl: 'hole2.webp',
+    picUrl: '/img/hole5.webp',
     proInfo: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis esse assumenda praesentium modi tempora fugiat laudantium, quod eligendi ab minus. Labore quis ex autem id atque possimus vel a corporis.'
 
   },
@@ -26,7 +26,7 @@ const holeDetailsInfo = [
     length: 270,
     par: 4,
     si: 13,
-    picUrl: 'hole3.webp',
+    picUrl: '/img/hole6.webp',
     proInfo: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis esse assumenda praesentium modi tempora fugiat laudantium, quod eligendi ab minus. Labore quis ex autem id atque possimus vel a corporis.'
 
   },
@@ -35,7 +35,7 @@ const holeDetailsInfo = [
     length: 400,
     par: 4,
     si: 9,
-    picUrl: 'hole1.webp',
+    picUrl: '/img/hole4.webp',
     proInfo: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis esse assumenda praesentium modi tempora fugiat laudantium, quod eligendi ab minus. Labore quis ex autem id atque possimus vel a corporis.'
 
   },
@@ -44,7 +44,7 @@ const holeDetailsInfo = [
     length: 420,
     par: 4,
     si: 11,
-    picUrl: 'hole2.webp',
+    picUrl: '/img/hole5.webp',
     proInfo: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis esse assumenda praesentium modi tempora fugiat laudantium, quod eligendi ab minus. Labore quis ex autem id atque possimus vel a corporis.'
 
   },
@@ -53,7 +53,7 @@ const holeDetailsInfo = [
     length: 270,
     par: 4,
     si: 18,
-    picUrl: 'hole3.webp',
+    picUrl: '/img/hole6.webp',
     proInfo: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis esse assumenda praesentium modi tempora fugiat laudantium, quod eligendi ab minus. Labore quis ex autem id atque possimus vel a corporis.'
 
   },
@@ -62,7 +62,7 @@ const holeDetailsInfo = [
     length: 400,
     par: 4,
     si: 3,
-    picUrl: 'hole1.webp',
+    picUrl: '/img/hole4.webp',
     proInfo: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis esse assumenda praesentium modi tempora fugiat laudantium, quod eligendi ab minus. Labore quis ex autem id atque possimus vel a corporis.'
 
   },
@@ -71,7 +71,7 @@ const holeDetailsInfo = [
     length: 420,
     par: 4,
     si: 15,
-    picUrl: 'hole2.webp',
+    picUrl: '/img/hole5.webp',
     proInfo: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis esse assumenda praesentium modi tempora fugiat laudantium, quod eligendi ab minus. Labore quis ex autem id atque possimus vel a corporis.'
 
   },
@@ -80,7 +80,7 @@ const holeDetailsInfo = [
     length: 270,
     par: 4,
     si: 5,
-    picUrl: 'hole3.webp',
+    picUrl: '/img/hole6.webp',
     proInfo: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis esse assumenda praesentium modi tempora fugiat laudantium, quod eligendi ab minus. Labore quis ex autem id atque possimus vel a corporis.'
 
   },
@@ -89,7 +89,7 @@ const holeDetailsInfo = [
     length: 400,
     par: 4,
     si: 14,
-    picUrl: 'hole1.webp',
+    picUrl: '/img/hole4.webp',
     proInfo: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis esse assumenda praesentium modi tempora fugiat laudantium, quod eligendi ab minus. Labore quis ex autem id atque possimus vel a corporis.'
 
   },
@@ -98,7 +98,7 @@ const holeDetailsInfo = [
     length: 420,
     par: 4,
     si: 6,
-    picUrl: 'hole2.webp',
+    picUrl: '/img/hole5.webp',
     proInfo: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis esse assumenda praesentium modi tempora fugiat laudantium, quod eligendi ab minus. Labore quis ex autem id atque possimus vel a corporis.'
 
   },
@@ -107,7 +107,7 @@ const holeDetailsInfo = [
     length: 270,
     par: 4,
     si: 4,
-    picUrl: 'hole3.webp',
+    picUrl: '/img/hole6.webp',
     proInfo: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis esse assumenda praesentium modi tempora fugiat laudantium, quod eligendi ab minus. Labore quis ex autem id atque possimus vel a corporis.'
 
   },
@@ -116,7 +116,7 @@ const holeDetailsInfo = [
     length: 400,
     par: 4,
     si: 16,
-    picUrl: 'hole1.webp',
+    picUrl: '/img/hole4.webp',
     proInfo: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis esse assumenda praesentium modi tempora fugiat laudantium, quod eligendi ab minus. Labore quis ex autem id atque possimus vel a corporis.'
 
   },
@@ -125,7 +125,7 @@ const holeDetailsInfo = [
     length: 420,
     par: 4,
     si: 10,
-    picUrl: 'hole2.webp',
+    picUrl: '/img/hole5.webp',
     proInfo: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis esse assumenda praesentium modi tempora fugiat laudantium, quod eligendi ab minus. Labore quis ex autem id atque possimus vel a corporis.'
 
   },
@@ -134,7 +134,7 @@ const holeDetailsInfo = [
     length: 270,
     par: 4,
     si: 17,
-    picUrl: 'hole3.webp',
+    picUrl: '/img/hole6.webp',
     proInfo: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis esse assumenda praesentium modi tempora fugiat laudantium, quod eligendi ab minus. Labore quis ex autem id atque possimus vel a corporis.'
 
   },
@@ -143,7 +143,7 @@ const holeDetailsInfo = [
     length: 400,
     par: 4,
     si: 12,
-    picUrl: 'hole1.webp',
+    picUrl: '/img/hole4.webp',
     proInfo: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis esse assumenda praesentium modi tempora fugiat laudantium, quod eligendi ab minus. Labore quis ex autem id atque possimus vel a corporis.'
 
   },
@@ -152,7 +152,7 @@ const holeDetailsInfo = [
     length: 420,
     par: 4,
     si: 2,
-    picUrl: 'hole2.webp',
+    picUrl: '/img/hole5.webp',
     proInfo: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis esse assumenda praesentium modi tempora fugiat laudantium, quod eligendi ab minus. Labore quis ex autem id atque possimus vel a corporis.'
 
   },
@@ -161,7 +161,7 @@ const holeDetailsInfo = [
     length: 270,
     par: 4,
     si: 7,
-    picUrl: 'hole3.webp',
+    picUrl: '/img/hole6.webp',
     proInfo: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis esse assumenda praesentium modi tempora fugiat laudantium, quod eligendi ab minus. Labore quis ex autem id atque possimus vel a corporis.'
 
   },
@@ -177,91 +177,84 @@ export default function CoursePage() {
     setHoleDetails(holeDetailsInfo[hole -1])
   }
 
-  const imgStyle = {
-    background: `url(/img/${holeDetails.picUrl}) no-repeat`, 
-    height: '100%',
-    width: '100%'
-}
-
   return (
     <>
       <Container>
-        <Box sx={{display: 'flex', flexDirection: 'column', alignItems: 'center', border: '1px solid grey'}}>
-          <Grid container>
+        <Box sx={{display: 'flex', flexDirection: 'column', alignItems: 'center', borderBottom: '1px solid grey'}}>
+          <Grid container xs={12} sx={{flexWrap:'wrap'}}>
             <Grid item>
-              <Button onClick={() => updateHole(1)}>1</Button>
+              <Button sx={{paddingLeft:'-10px'}} onClick={() => updateHole(1)}><Typography variant='h5'>1</Typography></Button>
             </Grid>
             <Grid item>
-              <Button onClick={() => updateHole(2)}>2</Button>
+              <Button onClick={() => updateHole(2)}><Typography variant='h5'>2</Typography></Button>
             </Grid>
             <Grid item>
-              <Button onClick={() => updateHole(3)}>3</Button>
+              <Button  onClick={() => updateHole(3)}><Typography variant='h5'>3</Typography></Button>
             </Grid>
             <Grid item>
-              <Button onClick={() => updateHole(4)}>4</Button>
+              <Button  onClick={() => updateHole(4)}><Typography variant='h5'>4</Typography></Button>
             </Grid>
             <Grid item>
-              <Button onClick={() => updateHole(5)}>5</Button>
+              <Button  onClick={() => updateHole(5)}><Typography variant='h5'>5</Typography></Button>
             </Grid>
             <Grid item>
-              <Button onClick={() => updateHole(6)}>6</Button>
+              <Button  onClick={() => updateHole(6)}><Typography variant='h5'>6</Typography></Button>
             </Grid>
             <Grid item>
-              <Button onClick={() => updateHole(7)}>7</Button>
+              <Button  onClick={() => updateHole(7)}><Typography variant='h5'>7</Typography></Button>
             </Grid>
             <Grid item>
-              <Button onClick={() => updateHole(8)}>8</Button>
+              <Button  onClick={() => updateHole(8)}><Typography variant='h5'>8</Typography></Button>
             </Grid>
             <Grid item>
-              <Button onClick={() => updateHole(9)}>9</Button>
+              <Button  onClick={() => updateHole(9)}><Typography variant='h5'>9</Typography></Button>
             </Grid>
             <Grid item>
-              <Button onClick={() => updateHole(10)}>10</Button>
+              <Button  onClick={() => updateHole(10)}><Typography variant='h5'>10</Typography></Button>
             </Grid>
             <Grid item>
-              <Button onClick={() => updateHole(11)}>11</Button>
+              <Button  onClick={() => updateHole(11)}><Typography variant='h5'>11</Typography></Button>
             </Grid>
             <Grid item>
-              <Button onClick={() => updateHole(12)}>12</Button>
+              <Button  onClick={() => updateHole(12)}><Typography variant='h5'>12</Typography></Button>
             </Grid>
             <Grid item>
-              <Button onClick={() => updateHole(13)}>13</Button>
+              <Button  onClick={() => updateHole(13)}><Typography variant='h5'>13</Typography></Button>
             </Grid>
             <Grid item>
-              <Button onClick={() => updateHole(14)}>14</Button>
+              <Button  onClick={() => updateHole(14)}><Typography variant='h5'>14</Typography></Button>
             </Grid>
             <Grid item>
-              <Button onClick={() => updateHole(15)}>15</Button>
+              <Button  onClick={() => updateHole(15)}><Typography variant='h5'>15</Typography></Button>
             </Grid>
             <Grid item>
-              <Button onClick={() => updateHole(16)}>16</Button>
+              <Button  onClick={() => updateHole(16)}><Typography variant='h5'>16</Typography></Button>
             </Grid>
             <Grid item>
-              <Button onClick={() => updateHole(17)}>17</Button>
+              <Button  onClick={() => updateHole(17)}><Typography variant='h5'>17</Typography></Button>
             </Grid>
             <Grid item>
-              <Button onClick={() => updateHole(18)}>18</Button>
+              <Button  onClick={() => updateHole(18)}><Typography variant='h5'>18</Typography></Button>
             </Grid>
           </Grid>
         </Box>
         <Grid container  sx={{display: 'flex', flexDirection: 'row'}}>
           <Grid item sm={6} xs={12}>
-            <Typography variant='h4' style={{padding: '20px'}}>Hole {hole}</Typography>
-            <Typography variant='h6' style={{padding: '20px'}}>Length : {holeDetails.length}</Typography>
-            <Typography variant='h6' style={{padding: '20px'}}>Par : {holeDetails.par}</Typography>
-            <Typography variant="h6" style={{padding: '20px'}}>Stroke Index : {holeDetails.si}</Typography>
-            <Typography variant='h6' style={{padding: '20px'}}>Hole details : {holeDetails.proInfo}</Typography>
+            <Typography variant='h4' style={{padding: '10px'}}>Hole {hole}</Typography>
+            <Typography variant='h6' style={{padding: '10px'}}>Length : {holeDetails.length}</Typography>
+            <Typography variant='h6' style={{padding: '10px'}}>Par : {holeDetails.par}</Typography>
+            <Typography variant="h6" style={{padding: '10px'}}>Stroke Index : {holeDetails.si}</Typography>
+            <Typography variant='h6' style={{padding: '10px'}}>Hole details : {holeDetails.proInfo}</Typography>
           </Grid>
-          <Grid item sm={6} xs={12} sx={{height: '85vh', padding: '20px'}}>
-          <Box component='img' style={imgStyle}>
-          </Box>
+          <Grid item sm={6} xs={12} sx={{ padding: '20px'}}>
+            <img src={holeDetails.picUrl} alt="hole" style={{maxWidth: '100%', maxHeight: '100%', backgroundSize: 'cover'}}/>
           </Grid>
           <Grid item xs={12} sx={{display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems:'center'}}>
-            <Typography variant='h3'>Hole Flyover</Typography>
+            <Typography variant='h4'>Hole Flyover</Typography>
             <video width="80%" height="80%" controls>
               <source src={holeDetails.video} type="video/mp4"/>
-            Sorry, your browser doesn't support embedded videos.
-          </video>
+              Sorry, your browser doesn't support embedded videos.
+            </video>
           </Grid>
         </Grid>
       </Container>

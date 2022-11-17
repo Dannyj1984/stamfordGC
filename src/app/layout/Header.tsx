@@ -1,4 +1,4 @@
-import * as React from 'react';
+
 import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
 import Divider from '@mui/material/Divider';
@@ -9,6 +9,7 @@ import ListItem from '@mui/material/ListItem';
 import MenuIcon from '@mui/icons-material/Menu';
 import Toolbar from '@mui/material/Toolbar';
 import { NavLink } from 'react-router-dom';
+import { useState } from 'react';
 
 interface Props {
   /**
@@ -30,7 +31,7 @@ const navItems = [
 
 export default function Header(props: Props) {
   const { window } = props;
-  const [mobileOpen, setMobileOpen] = React.useState(false);
+  const [mobileOpen, setMobileOpen] = useState(false);
 
   const handleDrawerToggle = () => {
     setMobileOpen(!mobileOpen);
@@ -66,9 +67,9 @@ export default function Header(props: Props) {
   const container = window !== undefined ? () => window().document.body : undefined;
 
   return (
-    <Box sx={{ display: 'flex', height: '15vh' }}>
-      <AppBar component="nav" sx={{backgroundColor: 'orange'}}>
-        <Toolbar>
+    <Box sx={{ display: 'flex' }}>
+      <AppBar component="nav" sx={{backgroundColor: 'orange' }}>
+        <Toolbar sx={{display:'flex', justifyContent:'space-between'}}>
           <IconButton
             color="inherit"
             aria-label="open drawer"
@@ -84,7 +85,7 @@ export default function Header(props: Props) {
             </ListItem>
           </IconButton>
           
-          <Box sx={{ display: { xs:'none', sm: 'none', md: 'flex' } }}>
+          <Box sx={{ display: { xs:'none', sm: 'none', md: 'flex' }, float:'right' }}>
             {navItems.map(({title, path}) => (
               <ListItem 
               component={NavLink}

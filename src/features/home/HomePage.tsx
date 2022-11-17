@@ -28,7 +28,7 @@ export default function HomePage() {
     }
 
     function getMargin(innerWidth: number) {
-        if (innerWidth > 500) return "40vh"
+        if (innerWidth > 500) return "22vh"
         if (innerWidth <=500) return "10vh"
         return "40vh"
     }
@@ -53,7 +53,7 @@ export default function HomePage() {
 
     return (
         <>
-        <Box style={style} sx={{height: '100vh'}}>
+        <Box style={style} sx={{height: '1000vh'}}>
             <Typography style={fontSize} align="center" sx={{color: 'white', paddingTop:'20px'}}>Welcome to Stamford Golf Club</Typography>
             <div style={{display: 'flex', justifyContent:'center'}}>
                 <span><GolfCourse sx={{color:"white", fontSize:'60px'}} /></span>
