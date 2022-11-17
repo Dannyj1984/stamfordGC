@@ -60,7 +60,7 @@ export default function HomePage() {
             </div>
             <div style={{display: 'flex', justifyContent:'center'}}>
                 <Paper elevation={2} style={margin} sx={{opacity:'0.8'}}>
-                    <div style={{display: 'flex', justifyContent:'center'}}>
+                    <div style={{display: 'flex', justifyContent:'center', paddingTop: '10px'}}>
                         <img src='/img/stamford.png' alt='logo' height={120} width={120}/>
                     </div>
                     <div style={{display: 'flex', flexDirection:'column', alignItems:'center'}}>
@@ -73,8 +73,6 @@ export default function HomePage() {
                         <Typography variant='h6' color='text.secondary' sx={{ paddingTop:'20px'}}>
                             For general enquiries please contact the Admin Manager on <a href='tel:01457 832126'>01457 832126</a> email <a href="mailto:admin@stamfordgolfclub.co.uk">admin@stamfordgolfclub.co.uk</a>
                         </Typography>
-                    
-                        
                 </Paper>
             </div>
             <Divider />

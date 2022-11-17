@@ -101,7 +101,7 @@ export default function HomeLinks() {
     const matches = useMediaQuery(theme.breakpoints.down('sm'));
   return (
     
-    <Box sx={{ display: 'flex', flexWrap: 'wrap', minWidth: 300, width: '100%' }}>
+    <Box sx={{ display: 'flex', flexWrap: 'wrap', minWidth: 300, width: '100%', paddingTop: '20px', backgroundColor: '#E4F3FD' }}>
       <ListItem component={NavLink} to={{pathname: `https://stamford.hub.clubv1.com/visitors/TeeSheet?date=${year}-${month+1}-${day}`}} target="_blank" sx={{
             width: matches ? '100%' : '25%',
             padding: '0px'

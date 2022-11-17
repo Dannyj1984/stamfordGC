@@ -1,4 +1,4 @@
-import { Button, Divider, Grid, Typography } from "@mui/material";
+import { Button, Grid, Typography } from "@mui/material";
 import { Box, Container } from "@mui/system";
 import { useState } from "react";
 
@@ -9,7 +9,7 @@ const holeDetailsInfo = [
     par: 4,
     si: 7,
     video: 'https://m.youtube.com/watch?v=exuBxno6kbU&t=149s',
-    picUrl: 'course3.jpg',
+    picUrl: 'hole1.webp',
     proInfo: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis esse assumenda praesentium modi tempora fugiat laudantium, quod eligendi ab minus. Labore quis ex autem id atque possimus vel a corporis.'
   },
   {
@@ -17,7 +17,7 @@ const holeDetailsInfo = [
     length: 420,
     par: 4,
     si: 1,
-    picUrl: 'course4.jpg',
+    picUrl: 'hole2.webp',
     proInfo: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis esse assumenda praesentium modi tempora fugiat laudantium, quod eligendi ab minus. Labore quis ex autem id atque possimus vel a corporis.'
 
   },
@@ -26,6 +26,7 @@ const holeDetailsInfo = [
     length: 270,
     par: 4,
     si: 13,
+    picUrl: 'hole3.webp',
     proInfo: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis esse assumenda praesentium modi tempora fugiat laudantium, quod eligendi ab minus. Labore quis ex autem id atque possimus vel a corporis.'
 
   },
@@ -34,6 +35,7 @@ const holeDetailsInfo = [
     length: 400,
     par: 4,
     si: 9,
+    picUrl: 'hole1.webp',
     proInfo: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis esse assumenda praesentium modi tempora fugiat laudantium, quod eligendi ab minus. Labore quis ex autem id atque possimus vel a corporis.'
 
   },
@@ -42,6 +44,7 @@ const holeDetailsInfo = [
     length: 420,
     par: 4,
     si: 11,
+    picUrl: 'hole2.webp',
     proInfo: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis esse assumenda praesentium modi tempora fugiat laudantium, quod eligendi ab minus. Labore quis ex autem id atque possimus vel a corporis.'
 
   },
@@ -50,6 +53,7 @@ const holeDetailsInfo = [
     length: 270,
     par: 4,
     si: 18,
+    picUrl: 'hole3.webp',
     proInfo: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis esse assumenda praesentium modi tempora fugiat laudantium, quod eligendi ab minus. Labore quis ex autem id atque possimus vel a corporis.'
 
   },
@@ -58,6 +62,7 @@ const holeDetailsInfo = [
     length: 400,
     par: 4,
     si: 3,
+    picUrl: 'hole1.webp',
     proInfo: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis esse assumenda praesentium modi tempora fugiat laudantium, quod eligendi ab minus. Labore quis ex autem id atque possimus vel a corporis.'
 
   },
@@ -66,6 +71,7 @@ const holeDetailsInfo = [
     length: 420,
     par: 4,
     si: 15,
+    picUrl: 'hole2.webp',
     proInfo: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis esse assumenda praesentium modi tempora fugiat laudantium, quod eligendi ab minus. Labore quis ex autem id atque possimus vel a corporis.'
 
   },
@@ -74,6 +80,7 @@ const holeDetailsInfo = [
     length: 270,
     par: 4,
     si: 5,
+    picUrl: 'hole3.webp',
     proInfo: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis esse assumenda praesentium modi tempora fugiat laudantium, quod eligendi ab minus. Labore quis ex autem id atque possimus vel a corporis.'
 
   },
@@ -82,6 +89,7 @@ const holeDetailsInfo = [
     length: 400,
     par: 4,
     si: 14,
+    picUrl: 'hole1.webp',
     proInfo: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis esse assumenda praesentium modi tempora fugiat laudantium, quod eligendi ab minus. Labore quis ex autem id atque possimus vel a corporis.'
 
   },
@@ -90,6 +98,7 @@ const holeDetailsInfo = [
     length: 420,
     par: 4,
     si: 6,
+    picUrl: 'hole2.webp',
     proInfo: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis esse assumenda praesentium modi tempora fugiat laudantium, quod eligendi ab minus. Labore quis ex autem id atque possimus vel a corporis.'
 
   },
@@ -98,6 +107,7 @@ const holeDetailsInfo = [
     length: 270,
     par: 4,
     si: 4,
+    picUrl: 'hole3.webp',
     proInfo: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis esse assumenda praesentium modi tempora fugiat laudantium, quod eligendi ab minus. Labore quis ex autem id atque possimus vel a corporis.'
 
   },
@@ -106,6 +116,7 @@ const holeDetailsInfo = [
     length: 400,
     par: 4,
     si: 16,
+    picUrl: 'hole1.webp',
     proInfo: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis esse assumenda praesentium modi tempora fugiat laudantium, quod eligendi ab minus. Labore quis ex autem id atque possimus vel a corporis.'
 
   },
@@ -114,6 +125,7 @@ const holeDetailsInfo = [
     length: 420,
     par: 4,
     si: 10,
+    picUrl: 'hole2.webp',
     proInfo: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis esse assumenda praesentium modi tempora fugiat laudantium, quod eligendi ab minus. Labore quis ex autem id atque possimus vel a corporis.'
 
   },
@@ -122,6 +134,7 @@ const holeDetailsInfo = [
     length: 270,
     par: 4,
     si: 17,
+    picUrl: 'hole3.webp',
     proInfo: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis esse assumenda praesentium modi tempora fugiat laudantium, quod eligendi ab minus. Labore quis ex autem id atque possimus vel a corporis.'
 
   },
@@ -130,6 +143,7 @@ const holeDetailsInfo = [
     length: 400,
     par: 4,
     si: 12,
+    picUrl: 'hole1.webp',
     proInfo: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis esse assumenda praesentium modi tempora fugiat laudantium, quod eligendi ab minus. Labore quis ex autem id atque possimus vel a corporis.'
 
   },
@@ -138,6 +152,7 @@ const holeDetailsInfo = [
     length: 420,
     par: 4,
     si: 2,
+    picUrl: 'hole2.webp',
     proInfo: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis esse assumenda praesentium modi tempora fugiat laudantium, quod eligendi ab minus. Labore quis ex autem id atque possimus vel a corporis.'
 
   },
@@ -146,6 +161,7 @@ const holeDetailsInfo = [
     length: 270,
     par: 4,
     si: 7,
+    picUrl: 'hole3.webp',
     proInfo: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis esse assumenda praesentium modi tempora fugiat laudantium, quod eligendi ab minus. Labore quis ex autem id atque possimus vel a corporis.'
 
   },
@@ -162,8 +178,7 @@ export default function CoursePage() {
   }
 
   const imgStyle = {
-    background: `url(/img/${holeDetails.picUrl}) no-repeat`,
-    backgroundSize: '100% 100%',  
+    background: `url(/img/${holeDetails.picUrl}) no-repeat`, 
     height: '100%',
     width: '100%'
 }
@@ -171,8 +186,7 @@ export default function CoursePage() {
   return (
     <>
       <Container>
-        <Box sx={{display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
-          <Typography variant="h2">Hole {hole}</Typography>
+        <Box sx={{display: 'flex', flexDirection: 'column', alignItems: 'center', border: '1px solid grey'}}>
           <Grid container>
             <Grid item>
               <Button onClick={() => updateHole(1)}>1</Button>
@@ -230,17 +244,16 @@ export default function CoursePage() {
             </Grid>
           </Grid>
         </Box>
-        <Divider />
         <Grid container  sx={{display: 'flex', flexDirection: 'row'}}>
           <Grid item sm={6} xs={12}>
-            <Typography variant='h6' style={{padding: '20px'}}>Hole details : {holeDetails.proInfo}</Typography>
-            <Typography variant='h6' style={{padding: '20px'}}>Hole : {holeDetails.id}</Typography>
+            <Typography variant='h4' style={{padding: '20px'}}>Hole {hole}</Typography>
             <Typography variant='h6' style={{padding: '20px'}}>Length : {holeDetails.length}</Typography>
             <Typography variant='h6' style={{padding: '20px'}}>Par : {holeDetails.par}</Typography>
             <Typography variant="h6" style={{padding: '20px'}}>Stroke Index : {holeDetails.si}</Typography>
+            <Typography variant='h6' style={{padding: '20px'}}>Hole details : {holeDetails.proInfo}</Typography>
           </Grid>
-          <Grid item sm={6} xs={12} sx={{height: '100vh', padding: '20px'}}>
-          <Box component='img' style={imgStyle} sx={{objectFit: 'cover'}}>
+          <Grid item sm={6} xs={12} sx={{height: '85vh', padding: '20px'}}>
+          <Box component='img' style={imgStyle}>
           </Box>
           </Grid>
           <Grid item xs={12} sx={{display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems:'center'}}>

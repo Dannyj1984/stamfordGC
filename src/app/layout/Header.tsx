@@ -21,9 +21,9 @@ interface Props {
 const drawerWidth = `${window.innerWidth / 2}px`;
 const navItems = [
     {title: 'Golf', path: '/golf'},
+    {title: 'Course', path: '/course'},
     {title: 'Functions', path: '/functions'},
     {title: 'Weddings', path: '/weddings'},
-    {title: 'Course', path: '/course'},
     {title: 'Contact', path: '/contact'}
 ];
 
