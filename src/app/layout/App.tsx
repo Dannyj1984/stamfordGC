@@ -15,6 +15,7 @@ import Copyright from "./Copyright";
 import './App.css';
 import CoursePage from "../../features/course/CoursePage";
 import NotFound from "./NotFound";
+import WeddingPage from "../../features/weddings/WeddingPage";
 
 function App() {
     
@@ -28,6 +29,7 @@ function App() {
               {/* exact means to only show if the url is that exact path */}
             <Route exact path='/' component={HomePage} /> 
             <Route exact path='/golf' component={GolfPage} />
+            <Route exact path='/weddings' component={WeddingPage} />
             <Route exact path='/members' component={MembersPage} />
             <Route exact path='/functions' component={FunctionsPage} />
             <Route exact path='/course' component={CoursePage} />

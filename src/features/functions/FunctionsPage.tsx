@@ -1,36 +1,34 @@
 import { Box, Divider, Paper, Typography } from "@mui/material";
-import { useEffect, useState } from "react";
 import ScrollToTop from "../../app/layout/ScrollToTop";
 
 
 
 export default function FunctionsPage() {
 
-    const [mobile, setMobile] = useState(false);
+    // const [mobile, setMobile] = useState(false);
 
 
-    function resizeListener() {
-        if (window.innerWidth <= 900) {
-            setMobile(true);
-        } else {
-            setMobile(false);
-        }
-    }
+    // function resizeListener() {
+    //     if (window.innerWidth <= 900) {
+    //         setMobile(true);
+    //     } else {
+    //         setMobile(false);
+    //     }
+    // }
 
-    window.addEventListener('resize', resizeListener);
+    // window.addEventListener('resize', resizeListener);
 
-    function setScreenSize() {
-        if(window.innerWidth <= 900) setMobile(true)
-    }
+    // function setScreenSize() {
+    //     if(window.innerWidth <= 900) setMobile(true)
+    // }
 
-    useEffect(() => {
-        setScreenSize();
-    }, [])
+    // useEffect(() => {
+    //     setScreenSize();
+    // }, [])
 
     const imgStyle = {
-        background: `url(/img/functionwide1.webp) no-repeat`,
-        backgroundSize: '100% 100%',
-        maxHeight: 'auto'
+        background: `url(/img/function1.webp) no-repeat`,
+        backgroundSize: '100% 100%'
     }
 
     return (
