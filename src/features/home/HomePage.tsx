@@ -1,6 +1,7 @@
 import { Box, Divider, Paper, Typography } from "@mui/material";
 import { useState } from "react";
 import GolfCourse from "@mui/icons-material/GolfCourse";
+import { Container } from "@mui/system";
 
 
 export default function HomePage() {
@@ -58,16 +59,17 @@ export default function HomePage() {
             <div style={{display: 'flex', justifyContent:'center'}}>
                 <span><GolfCourse sx={{color:"white", fontSize:'60px'}} /></span>
             </div>
-            <div style={{display: 'flex', justifyContent:'center'}}>
+            <Container>
+                <div style={{display: 'flex', justifyContent:'center'}}>
                 <Paper elevation={2} style={margin} sx={{opacity:'0.8'}}>
                     <div style={{display: 'flex', justifyContent:'center', paddingTop: '10px'}}>
                         <img src='/img/stamford.png' alt='logo' height={120} width={120}/>
                     </div>
-                    <div style={{display: 'flex', flexDirection:'column', alignItems:'center'}}>
-                        <Typography variant="h3" color='text.secondary' sx={{justifyContent: 'center', paddingBottom:'10px'}}>Welcome to Stamford Golf Club</Typography>
-                    </div>
-                        <Typography variant='h6' color='text.secondary' sx={{ paddingBottom:'10px'}}>
-                            We are glad to welcome back members to Stamford golf club. We are also welcoming visitors and ask you to see below to book or contact to professional's shop on <a href='tel:01457 832126'>01457 832126</a> to book.
+                        <Typography variant='h5' color='text.secondary' sx={{ paddingBottom:'10px'}}>
+                            Located at the foot of the pennines in Stalybridge, Stamford golf course offers fantastic views of the surrounding area.
+                        </Typography>
+                        <Typography variant='h6' color='text.secondary' sx={{ paddingTop:'20px'}}>
+                            The challenging course layout is a test for golfers of all standards. The course has benefited from extensive work on the greens allowing us to play the full course all year round.
                         </Typography>
 
                         <Typography variant='h6' color='text.secondary' sx={{ paddingTop:'20px'}}>
@@ -75,6 +77,8 @@ export default function HomePage() {
                         </Typography>
                 </Paper>
             </div>
+            </Container>
+            
             <Divider />
         </Box>
         </>

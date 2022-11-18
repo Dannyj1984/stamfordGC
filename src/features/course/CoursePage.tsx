@@ -8,7 +8,7 @@ const holeDetailsInfo = [
     length: 400,
     par: 4,
     si: 7,
-    video: 'https://m.youtube.com/watch?v=exuBxno6kbU&t=149s',
+    video: '/videos/hole1.mp4',
     picUrl: '/img/hole4.webp',
     proInfo: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis esse assumenda praesentium modi tempora fugiat laudantium, quod eligendi ab minus. Labore quis ex autem id atque possimus vel a corporis.'
   },
@@ -17,6 +17,7 @@ const holeDetailsInfo = [
     length: 420,
     par: 4,
     si: 1,
+    video: '/videos/hole1.mp4',
     picUrl: '/img/hole5.webp',
     proInfo: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis esse assumenda praesentium modi tempora fugiat laudantium, quod eligendi ab minus. Labore quis ex autem id atque possimus vel a corporis.'
 
@@ -26,6 +27,7 @@ const holeDetailsInfo = [
     length: 270,
     par: 4,
     si: 13,
+    video: '/videos/hole1.mp4',
     picUrl: '/img/hole6.webp',
     proInfo: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis esse assumenda praesentium modi tempora fugiat laudantium, quod eligendi ab minus. Labore quis ex autem id atque possimus vel a corporis.'
 
@@ -35,6 +37,7 @@ const holeDetailsInfo = [
     length: 400,
     par: 4,
     si: 9,
+    video: '/videos/hole1.mp4',
     picUrl: '/img/hole4.webp',
     proInfo: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis esse assumenda praesentium modi tempora fugiat laudantium, quod eligendi ab minus. Labore quis ex autem id atque possimus vel a corporis.'
 
@@ -44,6 +47,7 @@ const holeDetailsInfo = [
     length: 420,
     par: 4,
     si: 11,
+    video: '/videos/hole1.mp4',
     picUrl: '/img/hole5.webp',
     proInfo: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis esse assumenda praesentium modi tempora fugiat laudantium, quod eligendi ab minus. Labore quis ex autem id atque possimus vel a corporis.'
 
@@ -53,6 +57,7 @@ const holeDetailsInfo = [
     length: 270,
     par: 4,
     si: 18,
+    video: '/videos/hole1.mp4',
     picUrl: '/img/hole6.webp',
     proInfo: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis esse assumenda praesentium modi tempora fugiat laudantium, quod eligendi ab minus. Labore quis ex autem id atque possimus vel a corporis.'
 
@@ -62,6 +67,7 @@ const holeDetailsInfo = [
     length: 400,
     par: 4,
     si: 3,
+    video: '/videos/hole1.mp4',
     picUrl: '/img/hole4.webp',
     proInfo: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis esse assumenda praesentium modi tempora fugiat laudantium, quod eligendi ab minus. Labore quis ex autem id atque possimus vel a corporis.'
 
@@ -71,6 +77,7 @@ const holeDetailsInfo = [
     length: 420,
     par: 4,
     si: 15,
+    video: '/videos/hole1.mp4',
     picUrl: '/img/hole5.webp',
     proInfo: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis esse assumenda praesentium modi tempora fugiat laudantium, quod eligendi ab minus. Labore quis ex autem id atque possimus vel a corporis.'
 
@@ -80,6 +87,7 @@ const holeDetailsInfo = [
     length: 270,
     par: 4,
     si: 5,
+    video: '/videos/hole1.mp4',
     picUrl: '/img/hole6.webp',
     proInfo: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis esse assumenda praesentium modi tempora fugiat laudantium, quod eligendi ab minus. Labore quis ex autem id atque possimus vel a corporis.'
 
@@ -89,6 +97,7 @@ const holeDetailsInfo = [
     length: 400,
     par: 4,
     si: 14,
+    video: '/videos/hole1.mp4',
     picUrl: '/img/hole4.webp',
     proInfo: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis esse assumenda praesentium modi tempora fugiat laudantium, quod eligendi ab minus. Labore quis ex autem id atque possimus vel a corporis.'
 
@@ -98,6 +107,7 @@ const holeDetailsInfo = [
     length: 420,
     par: 4,
     si: 6,
+    video: '/videos/hole1.mp4',
     picUrl: '/img/hole5.webp',
     proInfo: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis esse assumenda praesentium modi tempora fugiat laudantium, quod eligendi ab minus. Labore quis ex autem id atque possimus vel a corporis.'
 
@@ -107,6 +117,7 @@ const holeDetailsInfo = [
     length: 270,
     par: 4,
     si: 4,
+    video: '/videos/hole1.mp4',
     picUrl: '/img/hole6.webp',
     proInfo: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis esse assumenda praesentium modi tempora fugiat laudantium, quod eligendi ab minus. Labore quis ex autem id atque possimus vel a corporis.'
 
@@ -116,6 +127,7 @@ const holeDetailsInfo = [
     length: 400,
     par: 4,
     si: 16,
+    video: '/videos/hole1.mp4',
     picUrl: '/img/hole4.webp',
     proInfo: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis esse assumenda praesentium modi tempora fugiat laudantium, quod eligendi ab minus. Labore quis ex autem id atque possimus vel a corporis.'
 
@@ -125,6 +137,7 @@ const holeDetailsInfo = [
     length: 420,
     par: 4,
     si: 10,
+    video: '/videos/hole1.mp4',
     picUrl: '/img/hole5.webp',
     proInfo: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis esse assumenda praesentium modi tempora fugiat laudantium, quod eligendi ab minus. Labore quis ex autem id atque possimus vel a corporis.'
 
@@ -134,6 +147,7 @@ const holeDetailsInfo = [
     length: 270,
     par: 4,
     si: 17,
+    video: '/videos/hole1.mp4',
     picUrl: '/img/hole6.webp',
     proInfo: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis esse assumenda praesentium modi tempora fugiat laudantium, quod eligendi ab minus. Labore quis ex autem id atque possimus vel a corporis.'
 
@@ -143,6 +157,7 @@ const holeDetailsInfo = [
     length: 400,
     par: 4,
     si: 12,
+    video: '/videos/hole1.mp4',
     picUrl: '/img/hole4.webp',
     proInfo: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis esse assumenda praesentium modi tempora fugiat laudantium, quod eligendi ab minus. Labore quis ex autem id atque possimus vel a corporis.'
 
@@ -152,6 +167,7 @@ const holeDetailsInfo = [
     length: 420,
     par: 4,
     si: 2,
+    video: '/videos/hole1.mp4',
     picUrl: '/img/hole5.webp',
     proInfo: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis esse assumenda praesentium modi tempora fugiat laudantium, quod eligendi ab minus. Labore quis ex autem id atque possimus vel a corporis.'
 
@@ -161,6 +177,7 @@ const holeDetailsInfo = [
     length: 270,
     par: 4,
     si: 7,
+    video: '/videos/hole1.mp4',
     picUrl: '/img/hole6.webp',
     proInfo: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis esse assumenda praesentium modi tempora fugiat laudantium, quod eligendi ab minus. Labore quis ex autem id atque possimus vel a corporis.'
 
@@ -180,7 +197,7 @@ export default function CoursePage() {
   return (
     <>
       <Container>
-        <Box sx={{display: 'flex', flexDirection: 'column', alignItems: 'center', borderBottom: '1px solid grey'}}>
+        <Box sx={{display: 'flex', flexDirection: 'column', justifyContent: 'center', borderBottom: '1px solid grey'}}>
           <Grid container xs={12} sx={{flexWrap:'wrap'}}>
             <Grid item>
               <Button sx={{paddingLeft:'-10px'}} onClick={() => updateHole(1)}><Typography variant='h5'>1</Typography></Button>
@@ -250,8 +267,8 @@ export default function CoursePage() {
             <img src={holeDetails.picUrl} alt="hole" style={{maxWidth: '100%', maxHeight: '100%', backgroundSize: 'cover'}}/>
           </Grid>
           <Grid item xs={12} sx={{display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems:'center'}}>
-            <Typography variant='h4'>Hole Flyover</Typography>
-            <video width="80%" height="80%" controls>
+            <Typography variant='h4'>{`Hole ${hole} flyover`}</Typography>
+            <video width="100%" height="80%" controls>
               <source src={holeDetails.video} type="video/mp4"/>
               Sorry, your browser doesn't support embedded videos.
             </video>
