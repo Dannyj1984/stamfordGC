@@ -1,10 +1,12 @@
 import { Box, Button, Container, Divider, Grid, MenuItem, TextField, Typography } from "@mui/material";
 import { useState } from "react";
+import Map from "./Map";
+import './contact.css'
 
     const contactUsers = [
         {
             id: 0,
-            value: 'Administrator',
+            value: 'General Enquiries',
             email: 'secretary@stamfordgolfclub.co.uk'
         },
         {
@@ -14,16 +16,23 @@ import { useState } from "react";
         },
         {
             id: 2,
-            value: 'Stewardess',
+            value: 'Functions & Catering',
             email: 'stewardess@stamfordgolfclub.co.uk'
         },
     ]
 
+    const location = {
+        address: 'Stamford Golf Club',
+        lat: 53.5180,
+        lng: -2.0400
+    }
+
 export default function ContactPage() {
 
-    const [user, setUsers] = useState('Administrator');
+    const [user, setUsers] = useState('General Enquiries');
     const [email, setEmail] = useState('secretary@stamfordgolfclub.co.uk');
     const [name, setName] = useState('');
+    const [phone, setPhone] = useState<number | null>(null)
     const [userEmail, setUserEmail] = useState('');
     const [message, setMessage] = useState('');
 
@@ -48,13 +57,24 @@ export default function ContactPage() {
         setMessage(event.target.value)
     }
 
+    const handleChangePhone =  (event: React.ChangeEvent<HTMLInputElement>) => {
+        if(event.target.value !== null) {
+            setPhone(parseInt(event.target.value))
+        }
+        
+    }
+
     const handleSubmit = () => {
-        // const newMessage = {
-        //     staffEmail: email,
-        //     name: name,
-        //     email: userEmail,
-        //     message: message
-        // }
+        const newMessage = {
+            staffEmail: email,
+            name: name,
+            email: userEmail,
+            phone: phone,
+            message: message
+        }
+
+        console.log(newMessage)
+        
     }
 
     const imgStyle = {
@@ -64,18 +84,21 @@ export default function ContactPage() {
         backgroundPosition: '100% 45%'
     }
 
+    console.log(email)
+
     return (
         <>
             <Box component='img' style={imgStyle} sx={{height:'40vh', width:'100%', objectFit: 'fill'}}>
             </Box>
             <Container>
                 <Grid container spacing={2} flex='true' sx={ { paddingTop:'5vh' } }>
-                    <Grid item xs={12} md={6} sx={{display: 'flex', flexDirection: 'column' }}>
-                        <Typography variant='h3'>Contact us <Divider flexItem={true} variant='middle'/></Typography>
+                    <Grid item xs={12} md={6} sx={{display: 'flex', flexDirection: 'column', paddingRight:'16px' }}>
+                        <Typography variant='h3'>Contact us<Divider flexItem={true} variant='fullWidth'/></Typography>
                         <Box
+                            className='contact-form'
                             component="form"
                             sx={{
-                                '& .MuiTextField-root': { m: 1 },
+                                '& .MuiTextField-root': { m: 1 }, 
                             }}
                             noValidate
                             autoComplete="off"
@@ -88,7 +111,6 @@ export default function ContactPage() {
                                 label="Select contact"
                                 value={user}
                                 onChange={handleChange}
-                                helperText="Please choose the person you wish to contact"
                                 >
                                 {contactUsers.map((option) => (
                                     <MenuItem key={option.id} value={option.value}>
@@ -97,7 +119,7 @@ export default function ContactPage() {
                                 ))}
                                 </TextField>
                             </div>
-                            {email}
+                            
                             <TextField
                                 label="Full Name"
                                 id="name"
@@ -116,6 +138,16 @@ export default function ContactPage() {
                                 onChange={handleChangeEmail}
                             />
                             <TextField
+                                label="Phone number"
+                                id="phone"
+                                fullWidth
+                                value={phone}
+                                type='number'
+                                sx={{ m: 1 }}
+                                onChange={handleChangePhone}
+                                helperText="Please provide your phone number if you would like a return phone call"
+                            />
+                            <TextField
                                 label="Message"
                                 id="message"
                                 fullWidth
@@ -130,8 +162,9 @@ export default function ContactPage() {
                     </Grid>
 
                     <Grid item xs={12} md={6} sx={{display: 'flex', flexDirection: 'column' }}>
-                        <Typography variant='h3' sx={{ alignItems: 'center' }}>Find us <Divider flexItem={true} variant='middle'/></Typography>
-                                    
+                        <Typography variant='h3' sx={{px: 5}} >Find us <Divider flexItem={true} variant='fullWidth'/></Typography>
+                        <Typography variant='body2' sx={{px: 5}} >Stamford Golf Club, Huddersfield Road, Stalybridge, SK15 3PY </Typography>
+                        <Map location={location} zoom={12}/>             
                     </Grid>
                 </Grid>
             </Container>
