@@ -93,7 +93,7 @@ export default function ContactPage() {
             <Container>
                 <Grid container spacing={2} flex='true' sx={ { paddingTop:'5vh' } }>
                     <Grid item xs={12} md={6} sx={{display: 'flex', flexDirection: 'column', paddingRight:'16px' }}>
-                        <Typography variant='h3'>Contact us<Divider flexItem={true} variant='fullWidth'/></Typography>
+                        <Typography variant='h3' sx={{textAlign: 'center'}}>Contact us<Divider flexItem={true} variant='fullWidth'/></Typography>
                         <Box
                             className='contact-form'
                             component="form"
@@ -162,8 +162,8 @@ export default function ContactPage() {
                     </Grid>
 
                     <Grid item xs={12} md={6} sx={{display: 'flex', flexDirection: 'column' }}>
-                        <Typography variant='h3' sx={{px: 5}} >Find us <Divider flexItem={true} variant='fullWidth'/></Typography>
-                        <Typography variant='body2' sx={{px: 5}} >Stamford Golf Club, Huddersfield Road, Stalybridge, SK15 3PY </Typography>
+                        <Typography variant='h3' sx={{px: 5, textAlign:'center'}} >Find us <Divider flexItem={true} variant='fullWidth'/></Typography>
+                        <Typography variant='body2' sx={{px: 5, textAlign:'center'}} >Stamford Golf Club, Huddersfield Road, Stalybridge, SK15 3PY </Typography>
                         <Map location={location} zoom={12}/>             
                     </Grid>
                 </Grid>

@@ -147,8 +147,8 @@ export default function MembershipTable() {
         <TableCell component="th" scope="row">
           {row.category}
         </TableCell>
-        <TableCell align="right">£{row.year1Cost}</TableCell>
-        <TableCell align="right">£{row.year2Cost}</TableCell>
+        <TableCell align="right">£{row.year1Cost}0</TableCell>
+        <TableCell align="right">£{row.year2Cost}0</TableCell>
       </TableRow>
     ))}
   </TableBody>
