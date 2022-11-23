@@ -1,11 +1,12 @@
 import { Box, Button, Divider, List, ListItem, Paper, Typography } from "@mui/material";
 import { NavLink } from "react-router-dom";
-import ArrowDropDownCircleIcon from '@mui/icons-material/ArrowDropDownCircle';
+import ArrowCircleDownIcon from '@mui/icons-material/ArrowCircleDown';
+import ArrowCircleUpIcon from '@mui/icons-material/ArrowCircleUp';
 import { useEffect, useRef, useState } from "react";
 import { Container } from "@mui/system";
 import MembershipTable from "./MembershipTable";
 import ScrollToTop from "../../app/layout/ScrollToTop";
-import Header from "../../app/layout/Header";
+import './golf.css';
     
 
 export default function GolfPage() {
@@ -67,7 +68,7 @@ export default function GolfPage() {
         <Box component='img' style={imgStyle} sx={{height:'40vh', width:'100%', objectFit: 'fill'}}>
         </Box>
         {!mobile &&
-        <Container >
+        <Container className='mini-nav-bar' >
             <List sx={{display: 'flex', flexDirection:'row'}}>
                 <ListItem  color='text.secondary' onClick={() => scrollToSection(fees)} sx={{
                     textDecoration:'none', 
@@ -125,8 +126,9 @@ export default function GolfPage() {
             </List> 
         </Container>
         }
+
         {mobile &&
-        <Box component='nav' sx={{height: '5vh'}}>
+        <Box className='mini-nav-bar' component='nav' sx={{height: '5vh'}}>
             <Button 
                 onClick={showLinksFunc} 
                 variant="outlined" 
@@ -136,14 +138,20 @@ export default function GolfPage() {
                 <span 
                     style={{paddingLeft:'10px'}}
                 >
-                    <ArrowDropDownCircleIcon />
+                    {!showLinks &&
+                        <ArrowCircleDownIcon />
+                    }
+                    {showLinks &&
+                        <ArrowCircleUpIcon />
+                    }
+                    
                 </span>
             </Button>
         </Box>}
         {showLinks &&
-        <Box >
-            <Container>
-                <List>
+        <Box sx={{position:' sticky', top:'151px', paddingTop: '10px', zIndex: 1, backgroundColor: 'lightgrey'}}>
+            
+                <List sx={{backgroundColor: 'lightgrey'}}>
                     <ListItem  color='text.secondary' onClick={() => scrollToSection(fees)} sx={{textDecoration:'none', color: 'black'}}>Green fees</ListItem>
                     <ListItem  color='text.secondary' onClick={() => scrollToSection(membership)} sx={{textDecoration:'none', color: 'black'}}>Membership</ListItem>
                     <ListItem  color='text.secondary' onClick={() => scrollToSection(societies)} sx={{textDecoration:'none', color: 'black'}}>Societies</ListItem>
@@ -151,7 +159,6 @@ export default function GolfPage() {
                     <ListItem  color='text.secondary' onClick={() => scrollToSection(opens)}  sx={{textDecoration:'none', color: 'black'}}>Opens</ListItem>
                     <ListItem  color='text.secondary' onClick={() => scrollToSection(course)}  sx={{textDecoration:'none', color: 'black'}}>Course Info</ListItem>
                 </List> 
-            </Container>
         </Box>   
         }
         <Paper elevation={4} sx={{ display:'flex', flexDirection:'column', justifyContent:'flex-start', alignItems:'center', py:'3rem'}}>

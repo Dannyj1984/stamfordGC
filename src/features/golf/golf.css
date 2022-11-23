@@ -1,0 +1,6 @@
+.mini-nav-bar {
+  position: sticky;
+  top:110px;
+  background-color: white;
+  z-index: 1;
+}
