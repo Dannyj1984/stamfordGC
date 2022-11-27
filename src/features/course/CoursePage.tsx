@@ -1,6 +1,7 @@
 import { Button, Grid, Typography } from "@mui/material";
 import { Box, Container } from "@mui/system";
 import { useState } from "react";
+import ScoreCardModal from "./ScoreCardModal";
 
 const holeDetailsInfo = [
   {
@@ -197,6 +198,7 @@ export default function CoursePage() {
   return (
     <>
       <Container>
+      <ScoreCardModal />
         <Box sx={{display: 'flex', flexDirection: 'column', justifyContent: 'center', borderBottom: '1px solid grey'}}>
           <Grid container xs={12} sx={{flexWrap:'wrap'}}>
             <Grid item>
