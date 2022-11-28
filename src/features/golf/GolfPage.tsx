@@ -1,4 +1,4 @@
-import { Box, Button, Divider, List, ListItem, Modal, Paper, Typography } from "@mui/material";
+import { Box, Button, Divider, List, ListItem, Paper, Typography } from "@mui/material";
 import { NavLink } from "react-router-dom";
 import ArrowCircleDownIcon from '@mui/icons-material/ArrowCircleDown';
 import ArrowCircleUpIcon from '@mui/icons-material/ArrowCircleUp';
@@ -7,7 +7,6 @@ import { Container } from "@mui/system";
 import MembershipTable from "./MembershipTable";
 import ScrollToTop from "../../app/layout/ScrollToTop";
 import './golf.css';
-import ScoreCardModal from "../course/ScoreCardModal";
     
 
 export default function GolfPage() {
