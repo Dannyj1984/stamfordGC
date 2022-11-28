@@ -1,7 +1,7 @@
-import { Box, Button, Container, Divider, Grid, MenuItem, TextField, Typography } from "@mui/material";
+import { Box, Button, Checkbox, Container, Divider, FormControlLabel, Grid, MenuItem, TextField, Typography } from "@mui/material";
 import { useState } from "react";
-import Map from "./Map";
 import './contact.css'
+import SimpleMap from "./SimpleMap";
 
     const contactUsers = [
         {
@@ -20,12 +20,6 @@ import './contact.css'
             email: 'stewardess@stamfordgolfclub.co.uk'
         },
     ]
-
-    const location = {
-        address: 'Stamford Golf Club',
-        lat: 53.5180,
-        lng: -2.0400
-    }
 
 export default function ContactPage() {
 
@@ -157,14 +151,22 @@ export default function ContactPage() {
                                 sx={{ m: 1 }}
                                 onChange={handleChangeMessage}
                             />
+                            
                             <Button variant="outlined" sx={{width: '100%', marginLeft: '8px', mb: '10px'}} onClick={handleSubmit}>Submit</Button>
+                            <Typography variant='body2' sx={{paddingLeft:'10px'}}>By submitting this form you agree to us contacting you regarding this particular enquiry.</Typography>
+                            <FormControlLabel 
+                                sx={{paddingLeft:'10px', fontWeight:'200'}} 
+                                control={<Checkbox required id='consent-checkbox' /> } 
+                                label={<Typography variant='body2'>Click here if you would like to receive information on future offers and events</Typography>}
+                            />
                         </Box>
                     </Grid>
 
                     <Grid item xs={12} md={6} sx={{display: 'flex', flexDirection: 'column' }}>
                         <Typography variant='h3' sx={{px: 5, textAlign:'center'}} >Find us <Divider flexItem={true} variant='fullWidth'/></Typography>
                         <Typography variant='body2' sx={{px: 5, textAlign:'center'}} >Stamford Golf Club, Huddersfield Road, Stalybridge, SK15 3PY </Typography>
-                        <Map location={location} zoom={12}/>             
+                        {/* <Map location={location} zoom={12}/>              */}
+                        <SimpleMap />
                     </Grid>
                 </Grid>
             </Container>
