@@ -12,8 +12,7 @@
 
 .pin {
   display: flex;
-  align-items: center;
-  width: 180px;
+  position: fixed;
   /* color: blue;
   top: 50%; left: 50%;
   transform: translate(-50%, -50%) */

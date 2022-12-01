@@ -22,8 +22,8 @@ interface Props {
 export default function SimpleMap(){
   const defaultProps = {
     center: {
-      lat: 53.5090,
-      lng: -2.0350
+      lat: 53.51000,
+      lng: -2.035000
     },
     zoom: 13
   };
@@ -35,7 +35,6 @@ export default function SimpleMap(){
       <GoogleMapReact
         bootstrapURLKeys={{ key: `${process.env.REACT_APP_GOOGLE_API_KEY}`
               }}
-        center={defaultProps.center}
         defaultCenter={defaultProps.center}
         defaultZoom={defaultProps.zoom}
       >

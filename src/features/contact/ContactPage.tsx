@@ -1,6 +1,6 @@
 import { Box, Button, Checkbox, Container, Divider, FormControlLabel, Grid, MenuItem, TextField, Typography } from "@mui/material";
 import { useState } from "react";
-import './contact.css'
+import './contact.css';
 import SimpleMap from "./SimpleMap";
 
     const contactUsers = [
@@ -20,6 +20,12 @@ import SimpleMap from "./SimpleMap";
             email: 'stewardess@stamfordgolfclub.co.uk'
         },
     ]
+
+    const location = {
+        address: 'Stamford',
+        lat: 53.5060,
+        lng: -2.0300
+    }
 
 export default function ContactPage() {
 
@@ -165,7 +171,7 @@ export default function ContactPage() {
                     <Grid item xs={12} md={6} sx={{display: 'flex', flexDirection: 'column' }}>
                         <Typography variant='h3' sx={{px: 5, textAlign:'center'}} >Find us <Divider flexItem={true} variant='fullWidth'/></Typography>
                         <Typography variant='body2' sx={{px: 5, textAlign:'center'}} >Stamford Golf Club, Huddersfield Road, Stalybridge, SK15 3PY </Typography>
-                        {/* <Map location={location} zoom={12}/>              */}
+                    
                         <SimpleMap />
                     </Grid>
                 </Grid>
