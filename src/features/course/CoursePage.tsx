@@ -200,7 +200,7 @@ export default function CoursePage() {
       <Container>
       <ScoreCardModal />
         <Box sx={{display: 'flex', flexDirection: 'column', justifyContent: 'center', borderBottom: '1px solid grey'}}>
-          <Grid container xs={12} sx={{flexWrap:'wrap'}}>
+          <Grid container sx={{flexWrap:'wrap'}}>
             <Grid item>
               <Button sx={{paddingLeft:'-10px'}} onClick={() => updateHole(1)}><Typography variant='h5'>1</Typography></Button>
             </Grid>
