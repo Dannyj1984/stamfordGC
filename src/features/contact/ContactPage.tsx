@@ -21,11 +21,11 @@ import SimpleMap from "./SimpleMap";
         },
     ]
 
-    const location = {
-        address: 'Stamford',
-        lat: 53.5060,
-        lng: -2.0300
-    }
+    // const location = {
+    //     address: 'Stamford',
+    //     lat: 53.5060,
+    //     lng: -2.0300
+    // }
 
 export default function ContactPage() {
 
